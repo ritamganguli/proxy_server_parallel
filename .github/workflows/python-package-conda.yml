@@ -18,7 +18,7 @@ jobs:
           pip3 install selenium
           nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
           nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
-          python3 browser3.py
+          python3 proxy1.py
 
   machine2:
     runs-on: ubuntu-latest
@@ -32,7 +32,7 @@ jobs:
           pip3 install selenium
           nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
           nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
-          python3 browser3.py
+          python3 proxy2.py
 
   machine3:
     runs-on: ubuntu-latest
@@ -46,4 +46,4 @@ jobs:
           pip3 install selenium
           nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
           nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
-          python3 browser3.py
+          python3 proxy3.py
