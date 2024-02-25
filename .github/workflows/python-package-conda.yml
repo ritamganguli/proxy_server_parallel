@@ -13,9 +13,6 @@ jobs:
         run: |
           curl -L https://downloads.lambdatest.com/tunnel/v3/linux/64bit -o LT
           ./LT --user shubhamr--key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm & sleep 60
-        env:
-          LT_USER: ${{ secrets.LT_USER }}
-          LT_KEY: ${{ secrets.LT_KEY }}
 
   setup-machine-1:
     runs-on: ubuntu-latest
@@ -27,8 +24,6 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: machine1
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy1.py
 
   setup-machine-2:
@@ -41,8 +36,6 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: machine2
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy2.py
 
   setup-machine-3:
@@ -55,6 +48,4 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: machine3
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy3.py
