@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest  # Assuming you are using Ubuntu runners
     strategy:
       matrix:
-        instance: [1, 2, 3]  # Define a matrix to run 3 instances
+        instance: [1]  # Define a matrix to run 3 instances
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
