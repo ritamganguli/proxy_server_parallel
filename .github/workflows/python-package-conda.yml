@@ -24,6 +24,6 @@ jobs:
     - name: Execute Commands
       run: |
         curl -L https://downloads.lambdatest.com/tunnel/v3/linux/64bit/LT -o LT & chmod +x LT & nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm --tunnelName Ritam${{ matrix.instance }} &
-        sleep 5  # Allow some time for the LT command to initialize
+        sleep 30  # Allow some time for the LT command to initialize
         nohup mitmdump -s proxy.py > mitmdump${{ matrix.instance }}.log 2>&1 &
         python proxy${{ matrix.instance }}.py & cat proxy.py
