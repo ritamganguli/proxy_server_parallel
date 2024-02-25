@@ -1,51 +1,46 @@
-name: LambdaTest Tunnel and Proxy Setup Workflow
+name: Execute Remote Commands on Machines
 
 on: [push]
 
 jobs:
-  setup-tunnel:
-    runs-on: windows-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      
-      - name: Setup LambdaTest Tunnel
-        run: |
-          curl -L https://downloads.lambdatest.com/tunnel/v3/linux/64bit -o LT
-          ./LT --user shubhamr--key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm & sleep 60
-
-  setup-machine-1:
+  remote-commands:
     runs-on: ubuntu-latest
     steps:
-      - name: Delay for tunnel setup
-        run: sleep 60 # Adjust the timing as needed for the tunnel to be ready
-      
-      - name: Run mitmdump and proxy1.py on machine 1
+      - name: Execute commands on Machine 1
         uses: appleboy/ssh-action@master
         with:
-          host: machine1
-          script: nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy1.py
-
-  setup-machine-2:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Delay for tunnel setup
-        run: sleep 60 # Adjust timing as necessary
+          host: ${{ secrets.SSH_HOST_MACHINE1 }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            pip install mitmproxy
+            pip install selenium
+            nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
+            nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
+            python browser3.py
       
-      - name: Run mitmdump and proxy2.py on machine 2
+      - name: Execute commands on Machine 2
         uses: appleboy/ssh-action@master
         with:
-          host: machine2
-          script: nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy2.py
-
-  setup-machine-3:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Delay for tunnel setup
-        run: sleep 60 # Adjust timing as necessary
+          host: ${{ secrets.SSH_HOST_MACHINE2 }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            pip install mitmproxy
+            pip install selenium
+            nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
+            nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
+            python browser3.py
       
-      - name: Run mitmdump and proxy3.py on machine 3
+      - name: Execute commands on Machine 3
         uses: appleboy/ssh-action@master
         with:
-          host: machine3
-          script: nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy3.py
+          host: ${{ secrets.SSH_HOST_MACHINE3 }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            pip install mitmproxy
+            pip install selenium
+            nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
+            nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
+            python browser3.py
