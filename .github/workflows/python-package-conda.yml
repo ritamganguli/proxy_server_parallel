@@ -12,7 +12,7 @@ jobs:
       - name: Setup LambdaTest Tunnel
         run: |
           curl -O https://downloads.lambdatest.com/tunnel/v3/windows/64bit/LT_Windows.zip
-          LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+          ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
         env:
           LT_USER: ${{ secrets.LT_USER }}
           LT_KEY: ${{ secrets.LT_KEY }}
