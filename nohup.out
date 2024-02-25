@@ -1,0 +1,600 @@
+No configuration file found. Proceeding with defaults
+[34mINFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[33mWARN[0m	Tunnel Name was not specified, using: c781e056-00fc-4777-aeb0-e2d3b8be3a0e
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying on port 22
+[35mDEBUG[0m	Trying over ssh over ws
+[35mDEBUG[0m	Trying on port 443
+[34mINFO[0m	Tunnel binary started on port :9090
+[35mDEBUG[0m	SSH connection over port 22 successful
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over port 443 successful
+[35mDEBUG[0m	SSH connection over ws successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[35mDEBUG[0m	otel disabled
+[35mDEBUG[0m	Sending tunnel registered message to channels
+[35mDEBUG[0m	Tunnel registered message received on control channel
+[35mDEBUG[0m	controller bus registered
+[35mDEBUG[0m	Using 5 ssh connection
+[35mDEBUG[0m	Successfully started sshd listener on port: 19762
+[34mINFO[0m	You can start testing now
+[35mDEBUG[0m	Successfully started sshd listener on port: 10315
+[34mINFO[0m	Tunnel ID: 391710
+[35mDEBUG[0m	Remote Listener Started on Port 8920
+[35mDEBUG[0m	Successfully started sshd listener on port: 4416
+[35mDEBUG[0m	Successfully started sshd listener on port: 28119
+[35mDEBUG[0m	Successfully started sshd listener on port: 2082
+[35mDEBUG[0m	main: received interrupt signal - attempting graceful shutdown ....
+[35mDEBUG[0m	main: telling goroutines to stop
+[35mDEBUG[0m	Exiting the sink proxy	{"tunnelID": "391710"}
+[35mDEBUG[0m	Context cancelled
+[34mINFO[0m	Stopping tunnel
+[35mDEBUG[0m	Unusual close error on control channel...
+[35mDEBUG[0m	Write loop ended for control channel
+[35mDEBUG[0m	Remote connection on remote port: 19762 closed, reason: EOF
+[35mDEBUG[0m	Remote connection on remote port: 28119 closed, reason: EOF
+[35mDEBUG[0m	Remote connection on remote port: 2082 closed, reason: EOF
+[35mDEBUG[0m	Remote connection on remote port: 10315 closed, reason: EOF
+[35mDEBUG[0m	Remote connection on remote port: 4416 closed, reason: EOF
+[35mDEBUG[0m	closed ssh connection with port 19762
+[35mDEBUG[0m	closed ssh connection with port 28119
+[35mDEBUG[0m	closed ssh connection with port 2082
+[35mDEBUG[0m	closed ssh connection with port 10315
+[35mDEBUG[0m	closed ssh connection with port 4416
+[34mINFO[0m	Tunnel stopped successfully
+[35mDEBUG[0m	Quit requested from main goroutine....
+[35mDEBUG[0m	Waiting for the goroutines to exit
+[35mDEBUG[0m	All goroutines exited
+[35mDEBUG[0m	main: all goroutines have finished.
+[35mDEBUG[0m	Go routines exited within timeout
+No configuration file found. Proceeding with defaults
+[34mINFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[33mWARN[0m	Tunnel Name was not specified, using: 1827e0cc-00c4-4f14-9fea-c7ca44aa7b24
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying on port 22
+[35mDEBUG[0m	Trying on port 443
+[35mDEBUG[0m	Trying over ssh over ws
+[34mINFO[0m	Tunnel binary started on port :9090
+[35mDEBUG[0m	SSH connection over port 443 successful
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over ws successful
+[35mDEBUG[0m	SSH connection over port 22 successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[35mDEBUG[0m	otel disabled
+[35mDEBUG[0m	Sending tunnel registered message to channels
+[35mDEBUG[0m	Tunnel registered message received on control channel
+[35mDEBUG[0m	controller bus registered
+[35mDEBUG[0m	Using 5 ssh connection
+[35mDEBUG[0m	Successfully started sshd listener on port: 5338
+[35mDEBUG[0m	Successfully started sshd listener on port: 26811
+[34mINFO[0m	You can start testing now
+[34mINFO[0m	Tunnel ID: 391716
+[35mDEBUG[0m	Remote Listener Started on Port 7765
+[35mDEBUG[0m	Successfully started sshd listener on port: 11068
+[35mDEBUG[0m	Successfully started sshd listener on port: 26181
+[35mDEBUG[0m	Successfully started sshd listener on port: 13343
+[34mINFO[0m	Tunnel closure requested from server. Exiting
+NFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[33mWARN[0m	Tunnel Name was not specified, using: d60fbf06-0ea8-45a3-8fcb-6d47ffb487a9
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying on port 22
+[35mDEBUG[0m	Trying on port 443
+[35mDEBUG[0m	Trying over ssh over ws
+[33mWARN[0m	Port 9090 is already in use. Trying on a random free tcp port.
+[34mINFO[0m	Tunnel binary started on port :57860
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over port 443 successful
+[35mDEBUG[0m	SSH connection over ws successful
+[35mDEBUG[0m	SSH connection over port 22 successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[35mDEBUG[0m	otel disabled
+[35mDEBUG[0m	Sending tunnel registered message to channels
+[35mDEBUG[0m	Tunnel registered message received on control channel
+[35mDEBUG[0m	controller bus registered
+[35mDEBUG[0m	Using 5 ssh connection
+[35mDEBUG[0m	Successfully started sshd listener on port: 8135
+[35mDEBUG[0m	Successfully started sshd listener on port: 16933
+[34mINFO[0m	You can start testing now
+[34mINFO[0m	Tunnel ID: 391718
+[35mDEBUG[0m	Remote Listener Started on Port 21787
+[35mDEBUG[0m	Successfully started sshd listener on port: 3430
+[35mDEBUG[0m	Successfully started sshd listener on port: 16063
+[35mDEBUG[0m	Successfully started sshd listener on port: 13190
+[34mINFO[0m	Tunnel closure requested from server. Exiting
+NFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[33mWARN[0m	Tunnel Name was not specified, using: a1ada83a-54fe-48bd-b928-f8cae527d9ad
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying on port 443
+[35mDEBUG[0m	Trying on port 22
+[35mDEBUG[0m	Trying over ssh over ws
+[33mWARN[0m	Port 9090 is already in use. Trying on a random free tcp port.
+[34mINFO[0m	Tunnel binary started on port :57949
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over port 443 successful
+[35mDEBUG[0m	SSH connection over ws successful
+[35mDEBUG[0m	SSH connection over port 22 successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[35mDEBUG[0m	otel disabled
+[35mDEBUG[0m	Sending tunnel registered message to channels
+[35mDEBUG[0m	Tunnel registered message received on control channel
+[35mDEBUG[0m	Using 5 ssh connection
+[35mDEBUG[0m	controller bus registered
+[35mDEBUG[0m	Successfully started sshd listener on port: 17125
+[35mDEBUG[0m	Successfully started sshd listener on port: 5736
+[35mDEBUG[0m	Successfully started sshd listener on port: 22573
+[34mINFO[0m	You can start testing now
+[34mINFO[0m	Tunnel ID: 391740
+[35mDEBUG[0m	Remote Listener Started on Port 18017
+[35mDEBUG[0m	Successfully started sshd listener on port: 14176
+[35mDEBUG[0m	Successfully started sshd listener on port: 11528
+[34mINFO[0m	Tunnel closure requested from server. Exiting
+NFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[33mWARN[0m	Tunnel Name was not specified, using: 20117ed6-0448-4719-a175-fa6535409148
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying on port 443
+[35mDEBUG[0m	Trying over ssh over ws
+[35mDEBUG[0m	Trying on port 22
+[33mWARN[0m	Port 9090 is already in use. Trying on a random free tcp port.
+[34mINFO[0m	Tunnel binary started on port :57991
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over port 443 successful
+[35mDEBUG[0m	SSH connection over ws successful
+[35mDEBUG[0m	SSH connection over port 22 successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[35mDEBUG[0m	otel disabled
+[35mDEBUG[0m	Sending tunnel registered message to channels
+[35mDEBUG[0m	Tunnel registered message received on control channel
+[35mDEBUG[0m	Using 5 ssh connection
+[35mDEBUG[0m	controller bus registered
+[35mDEBUG[0m	Successfully started sshd listener on port: 13004
+[35mDEBUG[0m	Successfully started sshd listener on port: 3521
+[34mINFO[0m	You can start testing now
+[35mDEBUG[0m	Successfully started sshd listener on port: 1063
+[34mINFO[0m	Tunnel ID: 391744
+[35mDEBUG[0m	Remote Listener Started on Port 11579
+[35mDEBUG[0m	Successfully started sshd listener on port: 8539
+[35mDEBUG[0m	Successfully started sshd listener on port: 21895
+[34mINFO[0m	Tunnel closure requested from server. Exiting
+NFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[33mWARN[0m	Tunnel Name was not specified, using: 54a24aaa-57ad-46f2-9b7b-c844c94a1976
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying on port 22
+[35mDEBUG[0m	Trying on port 443
+[35mDEBUG[0m	Trying over ssh over ws
+[33mWARN[0m	Port 9090 is already in use. Trying on a random free tcp port.
+[34mINFO[0m	Tunnel binary started on port :58055
+[35mDEBUG[0m	SSH connection over port 443 successful
+[35mDEBUG[0m	SSH connection over port 22 successful
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over ws successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[35mDEBUG[0m	otel disabled
+[35mDEBUG[0m	Sending tunnel registered message to channels
+[35mDEBUG[0m	Tunnel registered message received on control channel
+[35mDEBUG[0m	controller bus registered
+[35mDEBUG[0m	Using 5 ssh connection
+[35mDEBUG[0m	Successfully started sshd listener on port: 17194
+[35mDEBUG[0m	Successfully started sshd listener on port: 1429
+[34mINFO[0m	You can start testing now
+[34mINFO[0m	Tunnel ID: 391750
+[35mDEBUG[0m	Remote Listener Started on Port 14149
+[35mDEBUG[0m	Successfully started sshd listener on port: 31329
+[35mDEBUG[0m	Successfully started sshd listener on port: 30578
+[35mDEBUG[0m	Successfully started sshd listener on port: 19266
+[34mINFO[0m	Tunnel closure requested from server. Exiting
+NFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[33mWARN[0m	Tunnel Name was not specified, using: 9eda558c-e4a9-451a-bf2b-f1fc4914167a
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying on port 22
+[35mDEBUG[0m	Trying on port 443
+[35mDEBUG[0m	Trying over ssh over ws
+[33mWARN[0m	Port 9090 is already in use. Trying on a random free tcp port.
+[34mINFO[0m	Tunnel binary started on port :58100
+[35mDEBUG[0m	SSH connection over port 22 successful
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over ws successful
+[35mDEBUG[0m	SSH connection over port 443 successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[35mDEBUG[0m	otel disabled
+[35mDEBUG[0m	Sending tunnel registered message to channels
+[35mDEBUG[0m	Using 5 ssh connection
+[35mDEBUG[0m	Tunnel registered message received on control channel
+[35mDEBUG[0m	controller bus registered
+[35mDEBUG[0m	Successfully started sshd listener on port: 3922
+[35mDEBUG[0m	Successfully started sshd listener on port: 17160
+[34mINFO[0m	You can start testing now
+[35mDEBUG[0m	Successfully started sshd listener on port: 6345
+[34mINFO[0m	Tunnel ID: 391754
+[35mDEBUG[0m	Remote Listener Started on Port 18878
+[35mDEBUG[0m	Successfully started sshd listener on port: 25508
+[35mDEBUG[0m	Successfully started sshd listener on port: 18473
+[34mINFO[0m	Tunnel closure requested from server. Exiting
+No configuration file found. Proceeding with defaults
+[34mINFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[33mWARN[0m	Tunnel Name was not specified, using: 8155f82f-9eac-4da9-a05a-feba00e06f99
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying on port 22
+[35mDEBUG[0m	Trying on port 443
+[35mDEBUG[0m	Trying over ssh over ws
+[34mINFO[0m	Tunnel binary started on port :9090
+[35mDEBUG[0m	SSH connection over port 443 successful
+[35mDEBUG[0m	SSH connection over port 22 successful
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over ws successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[35mDEBUG[0m	otel disabled
+[35mDEBUG[0m	Sending tunnel registered message to channels
+[35mDEBUG[0m	Using 5 ssh connection
+[35mDEBUG[0m	Tunnel registered message received on control channel
+[35mDEBUG[0m	controller bus registered
+[35mDEBUG[0m	Successfully started sshd listener on port: 6235
+[35mDEBUG[0m	Successfully started sshd listener on port: 3363
+[34mINFO[0m	You can start testing now
+[34mINFO[0m	Tunnel ID: 391790
+[35mDEBUG[0m	Remote Listener Started on Port 28982
+[35mDEBUG[0m	Successfully started sshd listener on port: 25788
+[35mDEBUG[0m	Successfully started sshd listener on port: 9458
+[35mDEBUG[0m	Successfully started sshd listener on port: 16481
+[34mINFO[0m	Tunnel closure requested from server. Exiting
+NFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm --tunnelName Ritam
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying over ssh over ws
+[35mDEBUG[0m	Trying on port 443
+[35mDEBUG[0m	Trying on port 22
+[33mWARN[0m	Port 9090 is already in use. Trying on a random free tcp port.
+[34mINFO[0m	Tunnel binary started on port :58782
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over ws successful
+[35mDEBUG[0m	SSH connection over port 443 successful
+[35mDEBUG[0m	SSH connection over port 22 successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[35mDEBUG[0m	otel disabled
+[35mDEBUG[0m	Sending tunnel registered message to channels
+[35mDEBUG[0m	Tunnel registered message received on control channel
+[35mDEBUG[0m	Using 5 ssh connection
+[35mDEBUG[0m	controller bus registered
+[35mDEBUG[0m	Successfully started sshd listener on port: 13598
+[35mDEBUG[0m	Successfully started sshd listener on port: 1778
+[34mINFO[0m	You can start testing now
+[34mINFO[0m	Tunnel ID: 391819
+[35mDEBUG[0m	Remote Listener Started on Port 5735
+[35mDEBUG[0m	Successfully started sshd listener on port: 10991
+[35mDEBUG[0m	Successfully started sshd listener on port: 2656
+[35mDEBUG[0m	Successfully started sshd listener on port: 14029
+[34mINFO[0m	Tunnel closure requested from server. Exiting
+No configuration file found. Proceeding with defaults
+[34mINFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm --tunnelName Ritam
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying on port 22
+[35mDEBUG[0m	Trying on port 443
+[35mDEBUG[0m	Trying over ssh over ws
+[34mINFO[0m	Tunnel binary started on port :9090
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over ws successful
+[35mDEBUG[0m	SSH connection over port 22 successful
+[35mDEBUG[0m	SSH connection over port 443 successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[35mDEBUG[0m	otel disabled
+[35mDEBUG[0m	Sending tunnel registered message to channels
+[35mDEBUG[0m	Using 5 ssh connection
+[35mDEBUG[0m	Tunnel registered message received on control channel
+[35mDEBUG[0m	controller bus registered
+[35mDEBUG[0m	Successfully started sshd listener on port: 24283
+[35mDEBUG[0m	Successfully started sshd listener on port: 29558
+[34mINFO[0m	You can start testing now
+[34mINFO[0m	Tunnel ID: 392004
+[35mDEBUG[0m	Remote Listener Started on Port 17212
+[35mDEBUG[0m	Successfully started sshd listener on port: 4584
+[35mDEBUG[0m	Successfully started sshd listener on port: 31985
+[35mDEBUG[0m	Successfully started sshd listener on port: 4896
+[35mDEBUG[0m	handling connect request for URL https://accounts.google.com:443	{"tunnelID": "392004", "requestID": 1}
+[35mDEBUG[0m	Sending https request to  https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard	{"tunnelID": "392004", "requestID": 1}
+[35mDEBUG[0m	handling connect request for URL https://demo.playwright.dev:443	{"tunnelID": "392004", "requestID": 2}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ch:[Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version] Access-Control-Allow-Credentials:[true] Access-Control-Allow-Origin:[https://www.google.com] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[no-cache, no-store, max-age=0, must-revalidate] Content-Encoding:[gzip] Content-Security-Policy:[script-src 'report-sample' 'nonce-1V0Xrg578hA2_mPYrg81vg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/IdentityListAccountsHttp/cspreport;worker-src 'self' script-src 'unsafe-inline' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.gstatic.com https://www.google-analytics.com;report-uri /_/IdentityListAccountsHttp/cspreport/allowlist require-trusted-types-for 'script';report-uri /_/IdentityListAccountsHttp/cspreport] Content-Type:[application/json; charset=utf-8] Cross-Origin-Opener-Policy:[same-origin] Date:[Sun, 25 Feb 2024 14:32:13 GMT] Expires:[Mon, 01 Jan 1990 00:00:00 GMT] Permissions-Policy:[ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*] Pragma:[no-cache] Reporting-Endpoints:[default="/_/IdentityListAccountsHttp/web-reports?context=eJzjMtDikmJw05BiOHxtB5Meyy0mIyCe2_2UaSEQH4x7znQUiHf4eLA4pc9gDQFiIR6Ot_PermMT2PF_1nEmALnUGCQ"] Server:[ESF] Strict-Transport-Security:[max-age=31536000; includeSubDomains] X-Content-Type-Options:[nosniff] X-Xss-Protection:[0]] Body:{cs:0xc000002f00} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000b8100 TLS:0xc0004342c0} for https request for domain https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard	{"tunnelID": "392004", "requestID": 1}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/	{"tunnelID": "392004", "requestID": 2}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[355] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[337] Content-Type:[text/html; charset=utf-8] Date:[Sun, 25 Feb 2024 14:32:14 GMT] Etag:[W/"653816e6-210"] Expires:[Sun, 25 Feb 2024 12:27:28 GMT] Last-Modified:[Tue, 24 Oct 2023 19:11:34 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[1] X-Fastly-Request-Id:[294e9dea6e88774149a982f896bc1903c42a176f] X-Github-Request-Id:[B692:1665EA:2E790A:36FE61:65DB2FD7] X-Proxy-Cache:[MISS] X-Served-By:[cache-del21731-DEL] X-Timer:[S1708871534.066031,VS0,VE3]] Body:{cs:0xc0004e4a80} ContentLength:337 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000a0d00 TLS:0xc0005b20b0} for https request for domain https://demo.playwright.dev/api-mocking/	{"tunnelID": "392004", "requestID": 2}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/assets/index-c9b211ff.js	{"tunnelID": "392004", "requestID": 2}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[355] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[46881] Content-Type:[application/javascript; charset=utf-8] Date:[Sun, 25 Feb 2024 14:32:14 GMT] Etag:[W/"653816e6-23244"] Expires:[Sun, 25 Feb 2024 12:27:28 GMT] Last-Modified:[Tue, 24 Oct 2023 19:11:34 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[1] X-Fastly-Request-Id:[e9ac989133a740ebcfc5c446713393922eceea39] X-Github-Request-Id:[3E12:2D3088:BA111:E0EEC:65DB2FD6] X-Proxy-Cache:[MISS] X-Served-By:[cache-del21731-DEL] X-Timer:[S1708871534.328559,VS0,VE1]] Body:{cs:0xc0004e0000} ContentLength:46881 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000126900 TLS:0xc0005b20b0} for https request for domain https://demo.playwright.dev/api-mocking/assets/index-c9b211ff.js	{"tunnelID": "392004", "requestID": 2}
+[35mDEBUG[0m	handling connect request for URL https://demo.playwright.dev:443	{"tunnelID": "392004", "requestID": 3}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/assets/index-6d10c910.css	{"tunnelID": "392004", "requestID": 2}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[356] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[2097] Content-Type:[text/css; charset=utf-8] Date:[Sun, 25 Feb 2024 14:32:14 GMT] Etag:[W/"653816e6-19a1"] Expires:[Sun, 25 Feb 2024 12:27:28 GMT] Last-Modified:[Tue, 24 Oct 2023 19:11:34 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[1] X-Fastly-Request-Id:[a2257340fd69fd32ce6f2042fe171c68980c4cca] X-Github-Request-Id:[929A:182188:2D1F95:3517FD:65DB2FD8] X-Proxy-Cache:[MISS] X-Served-By:[cache-del21731-DEL] X-Timer:[S1708871535.994541,VS0,VE1]] Body:{cs:0xc0004e4a80} ContentLength:2097 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bc700 TLS:0xc0005b20b0} for https request for domain https://demo.playwright.dev/api-mocking/assets/index-6d10c910.css	{"tunnelID": "392004", "requestID": 2}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/api/v1/fruits	{"tunnelID": "392004", "requestID": 2}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Content-Length:[29] Content-Type:[application/json]] Body:{cs:0xc000002f00} ContentLength:29 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000126800 TLS:0xc0005b20b0} for https request for domain https://demo.playwright.dev/api-mocking/api/v1/fruits	{"tunnelID": "392004", "requestID": 2}
+[35mDEBUG[0m	handling connect request for URL https://playwright.dev:443	{"tunnelID": "392004", "requestID": 4}
+[35mDEBUG[0m	Sending https request to  https://playwright.dev/img/playwright-logo.svg	{"tunnelID": "392004", "requestID": 4}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[356] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[2117] Content-Type:[image/svg+xml] Date:[Sun, 25 Feb 2024 14:32:16 GMT] Etag:[W/"65d71f88-13a9"] Expires:[Thu, 22 Feb 2024 10:31:10 GMT] Last-Modified:[Thu, 22 Feb 2024 10:18:48 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[2] X-Fastly-Request-Id:[29278cdefc0e9e10b00ba053940adb57484aeb2b] X-Github-Request-Id:[D2D4:26A11:26B24C:2D3E2C:65D72051] X-Origin-Cache:[HIT] X-Proxy-Cache:[HIT] X-Served-By:[cache-del21729-DEL] X-Timer:[S1708871536.073554,VS0,VE0]] Body:{cs:0xc0004e4d80} ContentLength:2117 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000a0e00 TLS:0xc0005b2160} for https request for domain https://playwright.dev/img/playwright-logo.svg	{"tunnelID": "392004", "requestID": 4}
+[35mDEBUG[0m	handling connect request for URL https://accounts.google.com:443	{"tunnelID": "392004", "requestID": 5}
+[35mDEBUG[0m	Sending https request to  https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard	{"tunnelID": "392004", "requestID": 5}
+[35mDEBUG[0m	handling connect request for URL https://demo.playwright.dev:443	{"tunnelID": "392004", "requestID": 6}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ch:[Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version] Access-Control-Allow-Credentials:[true] Access-Control-Allow-Origin:[https://www.google.com] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[no-cache, no-store, max-age=0, must-revalidate] Content-Encoding:[gzip] Content-Security-Policy:[script-src 'report-sample' 'nonce-pXUFNcPsEg7o-M3rBSYEiQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/IdentityListAccountsHttp/cspreport;worker-src 'self' script-src 'unsafe-inline' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.gstatic.com https://www.google-analytics.com;report-uri /_/IdentityListAccountsHttp/cspreport/allowlist require-trusted-types-for 'script';report-uri /_/IdentityListAccountsHttp/cspreport] Content-Type:[application/json; charset=utf-8] Cross-Origin-Opener-Policy:[same-origin] Date:[Sun, 25 Feb 2024 14:32:19 GMT] Expires:[Mon, 01 Jan 1990 00:00:00 GMT] Permissions-Policy:[ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*] Pragma:[no-cache] Reporting-Endpoints:[default="/_/IdentityListAccountsHttp/web-reports?context=eJzjMtDikmJw0JBiOHxtB5Meyy0mIyCe2_2UaSEQH4x7znQUiHf4eLA4pc9gDQFiIR6Oz_PermMTmHHpVAsjALdvF8M"] Server:[ESF] Strict-Transport-Security:[max-age=31536000; includeSubDomains] X-Content-Type-Options:[nosniff] X-Xss-Protection:[0]] Body:{cs:0xc0004e0600} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000a1100 TLS:0xc0001404d0} for https request for domain https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard	{"tunnelID": "392004", "requestID": 5}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/	{"tunnelID": "392004", "requestID": 6}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[361] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[337] Content-Type:[text/html; charset=utf-8] Date:[Sun, 25 Feb 2024 14:32:19 GMT] Etag:[W/"653816e6-210"] Expires:[Sun, 25 Feb 2024 12:27:28 GMT] Last-Modified:[Tue, 24 Oct 2023 19:11:34 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[1] X-Fastly-Request-Id:[e46878768418960c076471821a2703964eea4953] X-Github-Request-Id:[B692:1665EA:2E790A:36FE61:65DB2FD7] X-Proxy-Cache:[MISS] X-Served-By:[cache-del21748-DEL] X-Timer:[S1708871540.959673,VS0,VE1]] Body:{cs:0xc000003200} ContentLength:337 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000126e00 TLS:0xc000434210} for https request for domain https://demo.playwright.dev/api-mocking/	{"tunnelID": "392004", "requestID": 6}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/assets/index-c9b211ff.js	{"tunnelID": "392004", "requestID": 6}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[361] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[46881] Content-Type:[application/javascript; charset=utf-8] Date:[Sun, 25 Feb 2024 14:32:20 GMT] Etag:[W/"653816e6-23244"] Expires:[Sun, 25 Feb 2024 12:27:28 GMT] Last-Modified:[Tue, 24 Oct 2023 19:11:34 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[1] X-Fastly-Request-Id:[d97a20d42cf1f3df97cd3cb3ed8a66c154d06315] X-Github-Request-Id:[3E12:2D3088:BA111:E0EEC:65DB2FD6] X-Proxy-Cache:[MISS] X-Served-By:[cache-del21748-DEL] X-Timer:[S1708871540.262962,VS0,VE1]] Body:{cs:0xc000002f00} ContentLength:46881 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000126700 TLS:0xc000434210} for https request for domain https://demo.playwright.dev/api-mocking/assets/index-c9b211ff.js	{"tunnelID": "392004", "requestID": 6}
+[35mDEBUG[0m	handling connect request for URL https://demo.playwright.dev:443	{"tunnelID": "392004", "requestID": 7}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/assets/index-6d10c910.css	{"tunnelID": "392004", "requestID": 7}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[362] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[2097] Content-Type:[text/css; charset=utf-8] Date:[Sun, 25 Feb 2024 14:32:21 GMT] Etag:[W/"653816e6-19a1"] Expires:[Sun, 25 Feb 2024 12:27:28 GMT] Last-Modified:[Tue, 24 Oct 2023 19:11:34 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[1] X-Fastly-Request-Id:[c8a5c173bd31f80935073ee4badd1502641c6cfd] X-Github-Request-Id:[929A:182188:2D1F95:3517FD:65DB2FD8] X-Proxy-Cache:[MISS] X-Served-By:[cache-del21727-DEL] X-Timer:[S1708871541.025316,VS0,VE1]] Body:{cs:0xc0004e4d80} ContentLength:2097 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000b8800 TLS:0xc000434370} for https request for domain https://demo.playwright.dev/api-mocking/assets/index-6d10c910.css	{"tunnelID": "392004", "requestID": 7}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/api/v1/fruits	{"tunnelID": "392004", "requestID": 7}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Content-Length:[29] Content-Type:[application/json]] Body:{cs:0xc0004e0000} ContentLength:29 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bc800 TLS:0xc000434370} for https request for domain https://demo.playwright.dev/api-mocking/api/v1/fruits	{"tunnelID": "392004", "requestID": 7}
+[35mDEBUG[0m	handling connect request for URL https://playwright.dev:443	{"tunnelID": "392004", "requestID": 8}
+[35mDEBUG[0m	Sending https request to  https://playwright.dev/img/playwright-logo.svg	{"tunnelID": "392004", "requestID": 8}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[362] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[2117] Content-Type:[image/svg+xml] Date:[Sun, 25 Feb 2024 14:32:22 GMT] Etag:[W/"65d71f88-13a9"] Expires:[Thu, 22 Feb 2024 10:31:10 GMT] Last-Modified:[Thu, 22 Feb 2024 10:18:48 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[1] X-Fastly-Request-Id:[faa98f8e314b22c8e9e3c2dd0078af265c58bba0] X-Github-Request-Id:[D2D4:26A11:26B24C:2D3E2C:65D72051] X-Origin-Cache:[HIT] X-Proxy-Cache:[HIT] X-Served-By:[cache-del21745-DEL] X-Timer:[S1708871542.113680,VS0,VE1]] Body:{cs:0xc00053c180} ContentLength:2117 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000a0e00 TLS:0xc0005b22c0} for https request for domain https://playwright.dev/img/playwright-logo.svg	{"tunnelID": "392004", "requestID": 8}
+[35mDEBUG[0m	handling connect request for URL https://optimizationguide-pa.googleapis.com:443	{"tunnelID": "392004", "requestID": 9}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw	{"tunnelID": "392004", "requestID": 9}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[private] Content-Disposition:[attachment] Content-Encoding:[gzip] Content-Length:[931] Content-Type:[application/x-protobuf] Date:[Sun, 25 Feb 2024 14:32:23 GMT] Server:[ESF] Vary:[Origin X-Origin Referer] X-Content-Type-Options:[nosniff] X-Frame-Options:[SAMEORIGIN] X-Xss-Protection:[0]] Body:{cs:0xc0004e5080} ContentLength:931 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000b8e00 TLS:0xc000434630} for https request for domain https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw	{"tunnelID": "392004", "requestID": 9}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION	{"tunnelID": "392004", "requestID": 9}
+[35mDEBUG[0m	handling connect request for URL https://optimizationguide-pa.googleapis.com:443	{"tunnelID": "392004", "requestID": 10}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[265059] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:23 GMT] Expires:[Mon, 26 Feb 2024 14:32:23 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=1IKXVw==] X-Guploader-Uploadid:[ABPtcPpNe9UBS0Q7_huwRa9rvTadL8_g88RFBGtsTrQd6rhiq9uMnSL5mNRZNYFXdDrYqw6MJGM]] Body:{cs:0xc0004e0600} ContentLength:265059 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bcf00 TLS:0xc000434630} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION	{"tunnelID": "392004", "requestID": 9}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1706549584&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 10}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[5137] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:24 GMT] Expires:[Mon, 26 Feb 2024 14:32:24 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=bBQpCA==] X-Guploader-Uploadid:[ABPtcPrnmakx5cKBtxpSoz5oMKFCtoBv46mL0qpox3P4LsmCnX0LwapfRVGXjFek6WlOVsvROaM]] Body:{cs:0xc0004e5080} ContentLength:5137 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000b8700 TLS:0xc000434420} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1706549584&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 10}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY	{"tunnelID": "392004", "requestID": 10}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=4&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2	{"tunnelID": "392004", "requestID": 9}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[883094] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:25 GMT] Expires:[Mon, 26 Feb 2024 14:32:25 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=phKVxw==] X-Guploader-Uploadid:[ABPtcPrzKHIgieRVu4npuCyTvSypVg78FlH7Ym11J-wUHQjMKirzEJCX_um1_VFYTyJpNUWsswk]] Body:{cs:0xc000002f00} ContentLength:883094 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000126700 TLS:0xc000434420} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY	{"tunnelID": "392004", "requestID": 10}
+[35mDEBUG[0m	handling connect request for URL https://accounts.google.com:443	{"tunnelID": "392004", "requestID": 11}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1706549577&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 10}
+[35mDEBUG[0m	handling connect request for URL https://demo.playwright.dev:443	{"tunnelID": "392004", "requestID": 12}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[45154] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:27 GMT] Expires:[Mon, 26 Feb 2024 14:32:27 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=C+r+Ew==] X-Guploader-Uploadid:[ABPtcPpE_JHxvdZtOfNPBG1LYBDinG3gaytxgNlKtEHYgyEmDL69ayjsrgrRd_t0biL1AHyMaPY]] Body:{cs:0xc00053c300} ContentLength:45154 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000a1000 TLS:0xc000434420} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1706549577&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 10}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1706544202&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING	{"tunnelID": "392004", "requestID": 10}
+[35mDEBUG[0m	handling connect request for URL https://optimizationguide-pa.googleapis.com:443	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:27 GMT] Expires:[Mon, 26 Feb 2024 14:32:27 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=BHdkOw==] X-Guploader-Uploadid:[ABPtcPpdDkJxJWivC5oqTj50Mu9FVI_IiwhFUhDS7FeudRAVZeJrQurea6lUUqQM_nOls97t4VQ]] Body:{cs:0xc0004e5200} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000b8c00 TLS:0xc000434630} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=4&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2	{"tunnelID": "392004", "requestID": 9}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	Sending https request to  https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard	{"tunnelID": "392004", "requestID": 11}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[private] Content-Disposition:[attachment] Content-Encoding:[gzip] Content-Length:[931] Content-Type:[application/x-protobuf] Date:[Sun, 25 Feb 2024 14:32:29 GMT] Server:[ESF] Vary:[Origin X-Origin Referer] X-Content-Type-Options:[nosniff] X-Frame-Options:[SAMEORIGIN] X-Xss-Protection:[0]] Body:{cs:0xc000d88000} ContentLength:931 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bd500 TLS:0xc000d80000} for https request for domain https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ch:[Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version] Access-Control-Allow-Credentials:[true] Access-Control-Allow-Origin:[https://www.google.com] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[no-cache, no-store, max-age=0, must-revalidate] Content-Encoding:[gzip] Content-Security-Policy:[require-trusted-types-for 'script';report-uri /_/IdentityListAccountsHttp/cspreport script-src 'report-sample' 'nonce-E_m6fq3Byhw-0LJnGFaXow' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/IdentityListAccountsHttp/cspreport;worker-src 'self' script-src 'unsafe-inline' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.gstatic.com https://www.google-analytics.com;report-uri /_/IdentityListAccountsHttp/cspreport/allowlist] Content-Type:[application/json; charset=utf-8] Cross-Origin-Opener-Policy:[same-origin] Date:[Sun, 25 Feb 2024 14:32:29 GMT] Expires:[Mon, 01 Jan 1990 00:00:00 GMT] Permissions-Policy:[ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*] Pragma:[no-cache] Reporting-Endpoints:[default="/_/IdentityListAccountsHttp/web-reports?context=eJzjMtDikmJw0ZBiOHxtB5Meyy0mIyCe2_2UaSEQH4x7znQUiHf4eLA4pc9gDQJiIR6Ov_PermMTuPH30m5GALsTGHk"] Server:[ESF] Strict-Transport-Security:[max-age=31536000; includeSubDomains] X-Content-Type-Options:[nosniff] X-Xss-Protection:[0]] Body:{cs:0xc000d88300} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000b8600 TLS:0xc000434160} for https request for domain https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard	{"tunnelID": "392004", "requestID": 11}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:28 GMT] Expires:[Mon, 26 Feb 2024 14:32:28 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=tJPN/w==] X-Guploader-Uploadid:[ABPtcPqbUbDtuy9RHleSiVhqAbIRmbFPkxlt5RQDjMaJLwpgUDkfZCZMChYAQLHm0lH6uljyt5E]] Body:{cs:0xc0004e0000} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bd100 TLS:0xc000434420} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1706544202&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING	{"tunnelID": "392004", "requestID": 10}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	handling connect request for URL https://optimizationguide-pa.googleapis.com:443	{"tunnelID": "392004", "requestID": 14}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/	{"tunnelID": "392004", "requestID": 12}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[371] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[337] Content-Type:[text/html; charset=utf-8] Date:[Sun, 25 Feb 2024 14:32:30 GMT] Etag:[W/"653816e6-210"] Expires:[Sun, 25 Feb 2024 12:27:28 GMT] Last-Modified:[Tue, 24 Oct 2023 19:11:34 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[2] X-Fastly-Request-Id:[097bf1c7f9da72cfe2adce2f8795257da9505aae] X-Github-Request-Id:[B692:1665EA:2E790A:36FE61:65DB2FD7] X-Proxy-Cache:[MISS] X-Served-By:[cache-del21731-DEL] X-Timer:[S1708871550.137367,VS0,VE1]] Body:{cs:0xc0004e5200} ContentLength:337 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000b8c00 TLS:0xc000d80370} for https request for domain https://demo.playwright.dev/api-mocking/	{"tunnelID": "392004", "requestID": 12}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1706549584&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 14}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1691042511&target=OPTIMIZATION_TARGET_NEW_TAB_PAGE_HISTORY_CLUSTERS_MODULE_RANKING	{"tunnelID": "392004", "requestID": 9}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/assets/index-6d10c910.css	{"tunnelID": "392004", "requestID": 12}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[371] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[2097] Content-Type:[text/css; charset=utf-8] Date:[Sun, 25 Feb 2024 14:32:30 GMT] Etag:[W/"653816e6-19a1"] Expires:[Sun, 25 Feb 2024 12:27:28 GMT] Last-Modified:[Tue, 24 Oct 2023 19:11:34 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[2] X-Fastly-Request-Id:[faca992f89010d4f3b0e2ca1bb003aa5bbbeb5c5] X-Github-Request-Id:[929A:182188:2D1F95:3517FD:65DB2FD8] X-Proxy-Cache:[MISS] X-Served-By:[cache-del21731-DEL] X-Timer:[S1708871550.477490,VS0,VE0]] Body:{cs:0xc0004e5500} ContentLength:2097 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000b9300 TLS:0xc000d80370} for https request for domain https://demo.playwright.dev/api-mocking/assets/index-6d10c910.css	{"tunnelID": "392004", "requestID": 12}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[3844] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:30 GMT] Expires:[Mon, 26 Feb 2024 14:32:30 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=jggMvA==] X-Guploader-Uploadid:[ABPtcPoE_WjqZLUamS0FeNrrxNbPI5irFm8ZxePBps6EJP-DRatbHGT7dmJYrCHKAvbUYv6hC4E]] Body:{cs:0xc0004e5380} ContentLength:3844 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000b9000 TLS:0xc000434630} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1691042511&target=OPTIMIZATION_TARGET_NEW_TAB_PAGE_HISTORY_CLUSTERS_MODULE_RANKING	{"tunnelID": "392004", "requestID": 9}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[5137] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:30 GMT] Expires:[Mon, 26 Feb 2024 14:32:30 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=bBQpCA==] X-Guploader-Uploadid:[ABPtcPrmBeG6HJbD4LqneKQqM_Va5hNDVNF6TONK_gKHlcjVHfAUviID79jTvmwchnIJQygWA54]] Body:{cs:0xc0004e5800} ContentLength:5137 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bc800 TLS:0xc000d804d0} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1706549584&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 14}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/assets/index-c9b211ff.js	{"tunnelID": "392004", "requestID": 12}
+[35mDEBUG[0m	handling connect request for URL https://demo.playwright.dev:443	{"tunnelID": "392004", "requestID": 15}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[371] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[46881] Content-Type:[application/javascript; charset=utf-8] Date:[Sun, 25 Feb 2024 14:32:30 GMT] Etag:[W/"653816e6-23244"] Expires:[Sun, 25 Feb 2024 12:27:28 GMT] Last-Modified:[Tue, 24 Oct 2023 19:11:34 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[2] X-Fastly-Request-Id:[b0ee18a36f1c43e8a00ad8e1391e07ba61b8d540] X-Github-Request-Id:[3E12:2D3088:BA111:E0EEC:65DB2FD6] X-Proxy-Cache:[MISS] X-Served-By:[cache-del21731-DEL] X-Timer:[S1708871551.793553,VS0,VE0]] Body:{cs:0xc000002f00} ContentLength:46881 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000127200 TLS:0xc000d80370} for https request for domain https://demo.playwright.dev/api-mocking/assets/index-c9b211ff.js	{"tunnelID": "392004", "requestID": 12}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1689043206&target=OPTIMIZATION_TARGET_VISUAL_SEARCH_CLASSIFICATION	{"tunnelID": "392004", "requestID": 9}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY	{"tunnelID": "392004", "requestID": 14}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[265059] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:31 GMT] Expires:[Mon, 26 Feb 2024 14:32:31 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=1IKXVw==] X-Guploader-Uploadid:[ABPtcPocmNxiHmhIHy4dKqrGNkBrpBTuaqwF2EGym-YoYND-Q8qzqYFM8EiA5rLdo95KKolexhg]] Body:{cs:0xc000d88480} ContentLength:265059 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000a1300 TLS:0xc000d80000} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[1463571] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:31 GMT] Expires:[Mon, 26 Feb 2024 14:32:31 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=KVcwcw==] X-Guploader-Uploadid:[ABPtcPqHSZUhOAHYOwuS3cwhvA9pOabBTOxSopw6RRykNfUY3xQInS7HCmfeBBLtPhzE8NEnuWk]] Body:{cs:0xc000003200} ContentLength:1463571 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000127500 TLS:0xc000434630} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1689043206&target=OPTIMIZATION_TARGET_VISUAL_SEARCH_CLASSIFICATION	{"tunnelID": "392004", "requestID": 9}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/api/v1/fruits	{"tunnelID": "392004", "requestID": 12}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Content-Length:[29] Content-Type:[application/json]] Body:{cs:0xc0004e5b00} ContentLength:29 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000b9800 TLS:0xc000d80370} for https request for domain https://demo.playwright.dev/api-mocking/api/v1/fruits	{"tunnelID": "392004", "requestID": 12}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=4&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	handling connect request for URL https://playwright.dev:443	{"tunnelID": "392004", "requestID": 16}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:32 GMT] Expires:[Mon, 26 Feb 2024 14:32:32 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=BHdkOw==] X-Guploader-Uploadid:[ABPtcPp38R1v1Yx61vzk0CX33EvjuvaJOBOCXiaMmt4eDl0IoTwOq9489bDJYEKgurYcvJL1cBs]] Body:{cs:0xc0004e5c80} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000b9c00 TLS:0xc000d80000} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=4&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[883094] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:33 GMT] Expires:[Mon, 26 Feb 2024 14:32:33 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=phKVxw==] X-Guploader-Uploadid:[ABPtcPpdtFiXixGhOuZ0k1ej2fXsjqe4xBLvSU8FgKDSUpNTOYH_thXDOMASjBU2bNESO5nBLlg]] Body:{cs:0xc000003380} ContentLength:883094 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000127800 TLS:0xc000d804d0} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY	{"tunnelID": "392004", "requestID": 14}
+[35mDEBUG[0m	Sending https request to  https://playwright.dev/img/playwright-logo.svg	{"tunnelID": "392004", "requestID": 16}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[375] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[2117] Content-Type:[image/svg+xml] Date:[Sun, 25 Feb 2024 14:32:35 GMT] Etag:[W/"65d71f88-13a9"] Expires:[Thu, 22 Feb 2024 10:31:10 GMT] Last-Modified:[Thu, 22 Feb 2024 10:18:48 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[2] X-Fastly-Request-Id:[9330e80d0fdad069d7039997a240fe70f7e108ee] X-Github-Request-Id:[D2D4:26A11:26B24C:2D3E2C:65D72051] X-Origin-Cache:[HIT] X-Proxy-Cache:[HIT] X-Served-By:[cache-del21722-DEL] X-Timer:[S1708871555.167896,VS0,VE0]] Body:{cs:0xc000c0e180} ContentLength:2117 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000b4c100 TLS:0xc000d808f0} for https request for domain https://playwright.dev/img/playwright-logo.svg	{"tunnelID": "392004", "requestID": 16}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1706549577&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	handling connect request for URL https://optimizationguide-pa.googleapis.com:443	{"tunnelID": "392004", "requestID": 17}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1706544202&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING	{"tunnelID": "392004", "requestID": 14}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[45154] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:36 GMT] Expires:[Mon, 26 Feb 2024 14:32:36 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=C+r+Ew==] X-Guploader-Uploadid:[ABPtcPpkDOvloNIg3sYMlXP4KzHMSOeCbcbOeAamR5YZA4PgG0JGhbgcpEgEXhCDlMzMHgkMdcw]] Body:{cs:0xc000c0e300} ContentLength:45154 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000b4c500 TLS:0xc000d80000} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1706549577&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1691042511&target=OPTIMIZATION_TARGET_NEW_TAB_PAGE_HISTORY_CLUSTERS_MODULE_RANKING	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[3844] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:36 GMT] Expires:[Mon, 26 Feb 2024 14:32:36 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=jggMvA==] X-Guploader-Uploadid:[ABPtcPoY65SopRnje_kBsRDfXXqG7r1IzGC5qz52zkV2lABmTC2c3ok3wP32Y_94aFDmq8aIUJA]] Body:{cs:0xc000c0e480} ContentLength:3844 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000b4c900 TLS:0xc000d80000} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1691042511&target=OPTIMIZATION_TARGET_NEW_TAB_PAGE_HISTORY_CLUSTERS_MODULE_RANKING	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1689043206&target=OPTIMIZATION_TARGET_VISUAL_SEARCH_CLASSIFICATION	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:36 GMT] Expires:[Mon, 26 Feb 2024 14:32:36 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=tJPN/w==] X-Guploader-Uploadid:[ABPtcPr5-G4gIrIv1jA541Z5xj_MmMxPwQemPo_2wgndamdB0Twzt5q1SuFScDwVijUCwKO1cG0]] Body:{cs:0xc000d88600} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000a1900 TLS:0xc000d804d0} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1706544202&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING	{"tunnelID": "392004", "requestID": 14}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[1463571] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:37 GMT] Expires:[Mon, 26 Feb 2024 14:32:37 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=KVcwcw==] X-Guploader-Uploadid:[ABPtcPqqyOTFpGMrQ6Bjl1taldv2PN_CmvPfCaewjZbjYKpnGcoz70d1ActUBhB-M_vX4qqwqd4]] Body:{cs:0xc000d88780} ContentLength:1463571 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000a1d00 TLS:0xc000d80000} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1689043206&target=OPTIMIZATION_TARGET_VISUAL_SEARCH_CLASSIFICATION	{"tunnelID": "392004", "requestID": 13}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw	{"tunnelID": "392004", "requestID": 17}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[private] Content-Disposition:[attachment] Content-Encoding:[gzip] Content-Length:[931] Content-Type:[application/x-protobuf] Date:[Sun, 25 Feb 2024 14:32:38 GMT] Server:[ESF] Vary:[Origin X-Origin Referer] X-Content-Type-Options:[nosniff] X-Frame-Options:[SAMEORIGIN] X-Xss-Protection:[0]] Body:{cs:0xc00053c300} ContentLength:931 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0007f8300 TLS:0xc000140580} for https request for domain https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw	{"tunnelID": "392004", "requestID": 17}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION	{"tunnelID": "392004", "requestID": 17}
+[35mDEBUG[0m	handling connect request for URL https://optimizationguide-pa.googleapis.com:443	{"tunnelID": "392004", "requestID": 18}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[265059] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:39 GMT] Expires:[Mon, 26 Feb 2024 14:32:39 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=1IKXVw==] X-Guploader-Uploadid:[ABPtcPp_BZNozGUAzP5Q18iosrw5TTw8Zu1gBwdsfZLQXXzf2lxnZ8tGxiuBRYkB6tjJ-2TmVQw]] Body:{cs:0xc000d88000} ContentLength:265059 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000a1000 TLS:0xc000140580} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION	{"tunnelID": "392004", "requestID": 17}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1706549584&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 18}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[5137] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:42 GMT] Expires:[Mon, 26 Feb 2024 14:32:42 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=bBQpCA==] X-Guploader-Uploadid:[ABPtcPron1Q92Bs6du5nSW_66z0H9wBlc7ogdQIm7Jj32keUxafZPsfskmnZqJymsSYHJk-CzJs]] Body:{cs:0xc000d88480} ContentLength:5137 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000a1500 TLS:0xc000c0c160} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1706549584&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 18}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY	{"tunnelID": "392004", "requestID": 18}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[883094] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:42 GMT] Expires:[Mon, 26 Feb 2024 14:32:42 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=phKVxw==] X-Guploader-Uploadid:[ABPtcPpbgG7WwReuS7oqKJc4F2JGqOOP6F6X00Cj-ohqLMWn_fvcif8mCMd_xDQBtFgf_dXcxRI]] Body:{cs:0xc000003200} ContentLength:883094 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000b4c400 TLS:0xc000c0c160} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY	{"tunnelID": "392004", "requestID": 18}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=4&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2	{"tunnelID": "392004", "requestID": 17}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:45 GMT] Expires:[Mon, 26 Feb 2024 14:32:45 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=BHdkOw==] X-Guploader-Uploadid:[ABPtcPqWSBNA8TK3UCGTCXgj4ESgFsW43geOLR_MbM1EoHV9OpmRrqRhGXQXCPQ3wce-eohxs_A]] Body:{cs:0xc000d88600} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000a1b00 TLS:0xc000140580} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=4&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2	{"tunnelID": "392004", "requestID": 17}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1706549577&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 18}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[45154] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:53 GMT] Expires:[Mon, 26 Feb 2024 14:32:53 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=C+r+Ew==] X-Guploader-Uploadid:[ABPtcPp0tYrtMW2SLZuCGWL_mCpwlJhVKb7_9XbbVobsFutqSB-6OdujG3gy7KmFqmdWQs5zGbU]] Body:{cs:0xc000d88780} ContentLength:45154 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0000a1e00 TLS:0xc000c0c160} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1706549577&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 18}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1706544202&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING	{"tunnelID": "392004", "requestID": 18}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:54 GMT] Expires:[Mon, 26 Feb 2024 14:32:54 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=tJPN/w==] X-Guploader-Uploadid:[ABPtcPqeWR_CV076epQPuDE7jwRCV44E9CsN8rzWu4XyMxZ23xxmg682DD63uF8FaqCa5hg7h3U]] Body:{cs:0xc000003380} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000b4c800 TLS:0xc000c0c160} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1706544202&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING	{"tunnelID": "392004", "requestID": 18}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1691042511&target=OPTIMIZATION_TARGET_NEW_TAB_PAGE_HISTORY_CLUSTERS_MODULE_RANKING	{"tunnelID": "392004", "requestID": 17}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[3844] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:56 GMT] Expires:[Mon, 26 Feb 2024 14:32:56 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=jggMvA==] X-Guploader-Uploadid:[ABPtcPpsmYc4wsyxo0BkBljxmXVIAqajB-49oFIBhdZkiy9L_LIK1Xey1v187gu4ng189g1uaVo]] Body:{cs:0xc000c0e300} ContentLength:3844 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000127500 TLS:0xc000140580} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1691042511&target=OPTIMIZATION_TARGET_NEW_TAB_PAGE_HISTORY_CLUSTERS_MODULE_RANKING	{"tunnelID": "392004", "requestID": 17}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1689043206&target=OPTIMIZATION_TARGET_VISUAL_SEARCH_CLASSIFICATION	{"tunnelID": "392004", "requestID": 17}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[1463571] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:32:59 GMT] Expires:[Mon, 26 Feb 2024 14:32:59 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=KVcwcw==] X-Guploader-Uploadid:[ABPtcPoQUXYDpqHNpXgl0RQ6gRtRc4PBEhRRHzvBeBKm9s3Jvn_oPfHr7YlbdH_yupbDkLbrhyw]] Body:{cs:0xc000c0e480} ContentLength:1463571 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000127800 TLS:0xc000140580} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1689043206&target=OPTIMIZATION_TARGET_VISUAL_SEARCH_CLASSIFICATION	{"tunnelID": "392004", "requestID": 17}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1689043206&target=OPTIMIZATION_TARGET_VISUAL_SEARCH_CLASSIFICATION	{"tunnelID": "392004", "requestID": 18}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[1463571] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:33:02 GMT] Expires:[Mon, 26 Feb 2024 14:33:02 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=KVcwcw==] X-Guploader-Uploadid:[ABPtcPoBb_W0uySj8Rq-xOsgmLTGaFOTEilOtYSmOM_8BUmDEXgBIfNPKcunXjUC4t-4RYIQUdw]] Body:{cs:0xc000d88900} ContentLength:1463571 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bc800 TLS:0xc000c0c160} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1689043206&target=OPTIMIZATION_TARGET_VISUAL_SEARCH_CLASSIFICATION	{"tunnelID": "392004", "requestID": 18}
+[35mDEBUG[0m	handling connect request for URL https://accounts.google.com:443	{"tunnelID": "392004", "requestID": 19}
+[35mDEBUG[0m	handling connect request for URL https://demo.playwright.dev:443	{"tunnelID": "392004", "requestID": 20}
+[35mDEBUG[0m	Sending https request to  https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard	{"tunnelID": "392004", "requestID": 19}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/	{"tunnelID": "392004", "requestID": 20}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ch:[Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version] Access-Control-Allow-Credentials:[true] Access-Control-Allow-Origin:[https://www.google.com] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[no-cache, no-store, max-age=0, must-revalidate] Content-Encoding:[gzip] Content-Security-Policy:[script-src 'report-sample' 'nonce-t2KZFVose16R3XjBh4b-pw' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/IdentityListAccountsHttp/cspreport;worker-src 'self' script-src 'unsafe-inline' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.gstatic.com https://www.google-analytics.com;report-uri /_/IdentityListAccountsHttp/cspreport/allowlist require-trusted-types-for 'script';report-uri /_/IdentityListAccountsHttp/cspreport] Content-Type:[application/json; charset=utf-8] Cross-Origin-Opener-Policy:[same-origin] Date:[Sun, 25 Feb 2024 14:36:50 GMT] Expires:[Mon, 01 Jan 1990 00:00:00 GMT] Permissions-Policy:[ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*] Pragma:[no-cache] Reporting-Endpoints:[default="/_/IdentityListAccountsHttp/web-reports?context=eJzjMtDikmJw0JBiOHxtB5Meyy0mIyCe2_2UaSEQH4x7znQUiHf4eLA4pc9gDQJiIW6OpoVv17EJTJiyXxMAmeQWpQ"] Server:[ESF] Strict-Transport-Security:[max-age=31536000; includeSubDomains] X-Content-Type-Options:[nosniff] X-Xss-Protection:[0]] Body:{cs:0xc000002f00} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000126700 TLS:0xc000434210} for https request for domain https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard	{"tunnelID": "392004", "requestID": 19}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[0] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[337] Content-Type:[text/html; charset=utf-8] Date:[Sun, 25 Feb 2024 14:36:50 GMT] Etag:[W/"653816e6-210"] Expires:[Sun, 25 Feb 2024 12:27:28 GMT] Last-Modified:[Tue, 24 Oct 2023 19:11:34 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[1] X-Fastly-Request-Id:[31c99c8f2fdb555bdf2644abc17ab8edfa0b497a] X-Github-Request-Id:[B692:1665EA:2E790A:36FE61:65DB2FD7] X-Proxy-Cache:[MISS] X-Served-By:[cache-del21734-DEL] X-Timer:[S1708871810.082425,VS0,VE240]] Body:{cs:0xc0004e0180} ContentLength:337 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0002ba200 TLS:0xc000140420} for https request for domain https://demo.playwright.dev/api-mocking/	{"tunnelID": "392004", "requestID": 20}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/assets/index-c9b211ff.js	{"tunnelID": "392004", "requestID": 20}
+[35mDEBUG[0m	handling connect request for URL https://demo.playwright.dev:443	{"tunnelID": "392004", "requestID": 21}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[0] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[46881] Content-Type:[application/javascript; charset=utf-8] Date:[Sun, 25 Feb 2024 14:36:50 GMT] Etag:[W/"653816e6-23244"] Expires:[Sun, 25 Feb 2024 12:27:28 GMT] Last-Modified:[Tue, 24 Oct 2023 19:11:34 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[1] X-Fastly-Request-Id:[ed0781db6c3b6cfa76839b90f985930bcb5f69bc] X-Github-Request-Id:[3E12:2D3088:BA111:E0EEC:65DB2FD6] X-Proxy-Cache:[MISS] X-Served-By:[cache-del21734-DEL] X-Timer:[S1708871811.591176,VS0,VE261]] Body:{cs:0xc0004e0600} ContentLength:46881 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000126c00 TLS:0xc000140420} for https request for domain https://demo.playwright.dev/api-mocking/assets/index-c9b211ff.js	{"tunnelID": "392004", "requestID": 20}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/assets/index-6d10c910.css	{"tunnelID": "392004", "requestID": 21}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[0] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[2097] Content-Type:[text/css; charset=utf-8] Date:[Sun, 25 Feb 2024 14:36:51 GMT] Etag:[W/"653816e6-19a1"] Expires:[Sun, 25 Feb 2024 12:27:28 GMT] Last-Modified:[Tue, 24 Oct 2023 19:11:34 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[1] X-Fastly-Request-Id:[a50a8f6248ce3c17b1c76a4a7ebd6173599e09b1] X-Github-Request-Id:[929A:182188:2D1F95:3517FD:65DB2FD8] X-Proxy-Cache:[MISS] X-Served-By:[cache-del21729-DEL] X-Timer:[S1708871812.503288,VS0,VE241]] Body:{cs:0xc0004e0780} ContentLength:2097 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000126700 TLS:0xc000140370} for https request for domain https://demo.playwright.dev/api-mocking/assets/index-6d10c910.css	{"tunnelID": "392004", "requestID": 21}
+[35mDEBUG[0m	Sending https request to  https://demo.playwright.dev/api-mocking/api/v1/fruits	{"tunnelID": "392004", "requestID": 21}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Content-Length:[29] Content-Type:[application/json]] Body:{cs:0xc0004e0900} ContentLength:29 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000126e00 TLS:0xc000140370} for https request for domain https://demo.playwright.dev/api-mocking/api/v1/fruits	{"tunnelID": "392004", "requestID": 21}
+[35mDEBUG[0m	handling connect request for URL https://playwright.dev:443	{"tunnelID": "392004", "requestID": 22}
+[35mDEBUG[0m	Sending https request to  https://playwright.dev/img/playwright-logo.svg	{"tunnelID": "392004", "requestID": 22}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Access-Control-Allow-Origin:[*] Age:[0] Cache-Control:[max-age=600] Content-Encoding:[gzip] Content-Length:[2117] Content-Type:[image/svg+xml] Date:[Sun, 25 Feb 2024 14:36:53 GMT] Etag:[W/"65d71f88-13a9"] Expires:[Thu, 22 Feb 2024 10:31:10 GMT] Last-Modified:[Thu, 22 Feb 2024 10:18:48 GMT] Server:[GitHub.com] Vary:[Accept-Encoding] Via:[1.1 varnish] X-Cache:[HIT] X-Cache-Hits:[1] X-Fastly-Request-Id:[fa7d20e25df20f3d3ec61637acb12b1b2d20c00e] X-Github-Request-Id:[D2D4:26A11:26B24C:2D3E2C:65D72051] X-Origin-Cache:[HIT] X-Proxy-Cache:[HIT] X-Served-By:[cache-del21735-DEL] X-Timer:[S1708871813.101339,VS0,VE241]] Body:{cs:0xc000003080} ContentLength:2117 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bc700 TLS:0xc0005e40b0} for https request for domain https://playwright.dev/img/playwright-logo.svg	{"tunnelID": "392004", "requestID": 22}
+[35mDEBUG[0m	handling connect request for URL https://optimizationguide-pa.googleapis.com:443	{"tunnelID": "392004", "requestID": 23}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw	{"tunnelID": "392004", "requestID": 23}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[private] Content-Disposition:[attachment] Content-Encoding:[gzip] Content-Length:[931] Content-Type:[application/x-protobuf] Date:[Sun, 25 Feb 2024 14:36:59 GMT] Server:[ESF] Vary:[Origin X-Origin Referer] X-Content-Type-Options:[nosniff] X-Frame-Options:[SAMEORIGIN] X-Xss-Protection:[0]] Body:{cs:0xc0004e4a80} ContentLength:931 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bcb00 TLS:0xc000434420} for https request for domain https://optimizationguide-pa.googleapis.com/v1:GetModels?key=AIzaSyBOti4mM-6x9WDnZIjIeyEU21OpBXqWBgw	{"tunnelID": "392004", "requestID": 23}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION	{"tunnelID": "392004", "requestID": 23}
+[35mDEBUG[0m	handling connect request for URL https://optimizationguide-pa.googleapis.com:443	{"tunnelID": "392004", "requestID": 24}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[265059] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:36:59 GMT] Expires:[Mon, 26 Feb 2024 14:36:59 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=1IKXVw==] X-Guploader-Uploadid:[ABPtcPpLl9Gz6Bhga8YPI8OOmGQbmiGig5MhcR2tbCigQG5HOBErFpzghiawEuzJMkiq0_H2eLK_mVqIZg]] Body:{cs:0xc0004e0a80} ContentLength:265059 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000127300 TLS:0xc000434420} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1679317318&target=OPTIMIZATION_TARGET_LANGUAGE_DETECTION	{"tunnelID": "392004", "requestID": 23}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1706549584&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 24}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[5137] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:37:01 GMT] Expires:[Mon, 26 Feb 2024 14:37:01 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=bBQpCA==] X-Guploader-Uploadid:[ABPtcPqEyo02mWl7rwVaAZHJ7E9duew8RIUR6086zYerpd6jCd_wPOTllJsAFmOafnMxukOoA2NyK6Ni_w]] Body:{cs:0xc0004e0780} ContentLength:5137 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc000126800 TLS:0xc0001404d0} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1706549584&target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 24}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY	{"tunnelID": "392004", "requestID": 23}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=4&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2	{"tunnelID": "392004", "requestID": 24}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[883094] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:37:01 GMT] Expires:[Mon, 26 Feb 2024 14:37:01 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=phKVxw==] X-Guploader-Uploadid:[ABPtcPojphwU7BtyYxi89AboKrE16tE4BTYHPpfDxaEyFuhwgG_o4K0NfmLUlCKp-wzjQRYIrzIWtH0x9Q]] Body:{cs:0xc0004e4a80} ContentLength:883094 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bc700 TLS:0xc000434420} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1673999601&target=OPTIMIZATION_TARGET_PAGE_VISIBILITY	{"tunnelID": "392004", "requestID": 23}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:37:01 GMT] Expires:[Mon, 26 Feb 2024 14:37:01 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=BHdkOw==] X-Guploader-Uploadid:[ABPtcPoDPglvn0pARTJrWnh04YlMLgRL9ZN0kOXDWDoMIA6e0mND9pxc8p9OmibkGu6-PFUCUkFPocSebQ]] Body:{cs:0xc000003080} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0002ba300 TLS:0xc0001404d0} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=4&target=OPTIMIZATION_TARGET_PAGE_TOPICS_V2	{"tunnelID": "392004", "requestID": 24}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1706549577&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 23}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[45154] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:37:03 GMT] Expires:[Mon, 26 Feb 2024 14:37:03 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=C+r+Ew==] X-Guploader-Uploadid:[ABPtcPoDgSATzhsyzjCeElRHa_PfYGoRLUm8f4xxdeu-va7ywUCjoC5THYYzfOGUyVtUlKoLbYcbkrJ9JQ]] Body:{cs:0xc000003200} ContentLength:45154 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0002ba800 TLS:0xc000434420} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1706549577&target=OPTIMIZATION_TARGET_GEOLOCATION_PERMISSION_PREDICTIONS	{"tunnelID": "392004", "requestID": 23}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1706544202&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING	{"tunnelID": "392004", "requestID": 23}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1691042511&target=OPTIMIZATION_TARGET_NEW_TAB_PAGE_HISTORY_CLUSTERS_MODULE_RANKING	{"tunnelID": "392004", "requestID": 24}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[3844] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:37:04 GMT] Expires:[Mon, 26 Feb 2024 14:37:04 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=jggMvA==] X-Guploader-Uploadid:[ABPtcPqcJHBsgasO8fO4j_4EAuUhPTeEJyEv9YBhdHN5-2DH5-pr3H76hmtfLI5uyweopXLudfzcLn5bLw]] Body:{cs:0xc0004e4d80} ContentLength:3844 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bce00 TLS:0xc0001404d0} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1691042511&target=OPTIMIZATION_TARGET_NEW_TAB_PAGE_HISTORY_CLUSTERS_MODULE_RANKING	{"tunnelID": "392004", "requestID": 24}
+[35mDEBUG[0m	Sending https request to  https://optimizationguide-pa.googleapis.com/downloads?name=1689043206&target=OPTIMIZATION_TARGET_VISUAL_SEARCH_CLASSIFICATION	{"tunnelID": "392004", "requestID": 24}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:37:03 GMT] Expires:[Mon, 26 Feb 2024 14:37:03 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=tJPN/w==] X-Guploader-Uploadid:[ABPtcPrQP8xa7ZS-d2lrBQdDibE-uuHsjwXhIlaEbjrC6_DjSOeh_dox5iIhc2RVrPtQSlzsswcAH2C6yw]] Body:{cs:0xc0004e4c00} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bcb00 TLS:0xc000434420} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1706544202&target=OPTIMIZATION_TARGET_CLIENT_SIDE_PHISHING	{"tunnelID": "392004", "requestID": 23}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ranges:[bytes] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[public, max-age=86400] Content-Length:[1463571] Content-Type:[text/html; charset=UTF-8] Date:[Sun, 25 Feb 2024 14:37:04 GMT] Expires:[Mon, 26 Feb 2024 14:37:04 GMT] Server:[UploadServer] Vary:[X-Goog-Api-Key] X-Goog-Hash:[crc32c=KVcwcw==] X-Guploader-Uploadid:[ABPtcPquRJ_XE8R6dKHX4oa6X5ZQQRCGexIaOWfyb6eow8nuVuEKUF2PVmGti1Y8oScrRzK62xlL4lVFlg]] Body:{cs:0xc0004e4f00} ContentLength:1463571 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bd100 TLS:0xc0001404d0} for https request for domain https://optimizationguide-pa.googleapis.com/downloads?name=1689043206&target=OPTIMIZATION_TARGET_VISUAL_SEARCH_CLASSIFICATION	{"tunnelID": "392004", "requestID": 24}
+[35mDEBUG[0m	handling connect request for URL https://accounts.google.com:443	{"tunnelID": "392004", "requestID": 25}
+[35mDEBUG[0m	Sending https request to  https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard	{"tunnelID": "392004", "requestID": 25}
+[35mDEBUG[0m	Response &{Status:200 OK StatusCode:200 Proto:HTTP/2.0 ProtoMajor:2 ProtoMinor:0 Header:map[Accept-Ch:[Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version] Access-Control-Allow-Credentials:[true] Access-Control-Allow-Origin:[https://www.google.com] Alt-Svc:[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000] Cache-Control:[no-cache, no-store, max-age=0, must-revalidate] Content-Encoding:[gzip] Content-Security-Policy:[require-trusted-types-for 'script';report-uri /_/IdentityListAccountsHttp/cspreport script-src 'report-sample' 'nonce-Vch651QI2qibYHR-angzSQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/IdentityListAccountsHttp/cspreport;worker-src 'self' script-src 'unsafe-inline' 'self' https://apis.google.com https://ssl.gstatic.com https://www.google.com https://www.googletagmanager.com https://www.gstatic.com https://www.google-analytics.com;report-uri /_/IdentityListAccountsHttp/cspreport/allowlist] Content-Type:[application/json; charset=utf-8] Cross-Origin-Opener-Policy:[same-origin] Date:[Sun, 25 Feb 2024 14:43:59 GMT] Expires:[Mon, 01 Jan 1990 00:00:00 GMT] Permissions-Policy:[ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*] Pragma:[no-cache] Reporting-Endpoints:[default="/_/IdentityListAccountsHttp/web-reports?context=eJzjMtDikmJw1pBiOHxtB5Meyy0mIyCe2_2UaSEQH4x7znQUiHf4eLA4pc9gDQJiIR6O9UvermMTuHB33X0mALbwGAk"] Server:[ESF] Strict-Transport-Security:[max-age=31536000; includeSubDomains] X-Content-Type-Options:[nosniff] X-Xss-Protection:[0]] Body:{cs:0xc000002f00} ContentLength:-1 TransferEncoding:[] Close:false Uncompressed:false Trailer:map[] Request:0xc0005bc500 TLS:0xc0001402c0} for https request for domain https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard	{"tunnelID": "392004", "requestID": 25}
+No configuration file found. Proceeding with defaults
+[34mINFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm --tunnelName Ritam
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying over ssh over ws
+[35mDEBUG[0m	Trying on port 443
+[35mDEBUG[0m	Trying on port 22
+[33mWARN[0m	Port 9090 is already in use. Trying on a random free tcp port.
+[34mINFO[0m	Tunnel binary started on port :53990
+[35mDEBUG[0m	SSH connection over port 443 successful
+[35mDEBUG[0m	SSH connection over port 22 successful
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over ws successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[31mERROR[0m	conflict: Tunnel with name: Ritam is already running for user shubhamr@lambdatest.com
+[31mERROR[0m	There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: Ritam is already running for user shubhamr@lambdatest.com 
+No configuration file found. Proceeding with defaults
+[34mINFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm --tunnelName Ritam
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying on port 22
+[35mDEBUG[0m	Trying over ssh over ws
+[35mDEBUG[0m	Trying on port 443
+[33mWARN[0m	Port 9090 is already in use. Trying on a random free tcp port.
+[34mINFO[0m	Tunnel binary started on port :54094
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over ws successful
+[35mDEBUG[0m	SSH connection over port 22 successful
+[35mDEBUG[0m	SSH connection over port 443 successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[31mERROR[0m	conflict: Tunnel with name: Ritam is already running for user shubhamr@lambdatest.com
+[31mERROR[0m	There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: Ritam is already running for user shubhamr@lambdatest.com 
+No configuration file found. Proceeding with defaults
+[34mINFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm --tunnelName Ritam
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying on port 22
+[35mDEBUG[0m	Trying on port 443
+[35mDEBUG[0m	Trying over ssh over ws
+[33mWARN[0m	Port 9090 is already in use. Trying on a random free tcp port.
+[34mINFO[0m	Tunnel binary started on port :54161
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over port 443 successful
+[35mDEBUG[0m	SSH connection over port 22 successful
+[35mDEBUG[0m	SSH connection over ws successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[31mERROR[0m	conflict: Tunnel with name: Ritam is already running for user shubhamr@lambdatest.com
+[31mERROR[0m	There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: Ritam is already running for user shubhamr@lambdatest.com 
