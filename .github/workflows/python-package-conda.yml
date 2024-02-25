@@ -4,51 +4,58 @@ on: [push]
 
 jobs:
   setup-tunnel:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       
       - name: Setup LambdaTest Tunnel
         run: |
-          curl -O https://downloads.lambdatest.com/tunnel/v3/windows/64bit/LT_Windows.zip
-          ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+          curl -L https://downloads.lambdatest.com/tunnel/v3/linux/64bit -o LT
+          chmod +x LT
+          nohup ./LT --user shubhamr--key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm & sleep 60
         env:
           LT_USER: ${{ secrets.LT_USER }}
           LT_KEY: ${{ secrets.LT_KEY }}
 
   setup-machine-1:
-    needs: setup-tunnel
     runs-on: ubuntu-latest
     steps:
+      - name: Delay for tunnel setup
+        run: sleep 60 # Adjust the timing as needed for the tunnel to be ready
+      
       - name: Run mitmdump and proxy1.py on machine 1
         uses: appleboy/ssh-action@master
         with:
           host: machine1
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: pip install mitmproxy & nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy1.py
+          script: nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy1.py
 
   setup-machine-2:
-    needs: setup-tunnel
     runs-on: ubuntu-latest
     steps:
+      - name: Delay for tunnel setup
+        run: sleep 60 # Adjust timing as necessary
+      
       - name: Run mitmdump and proxy2.py on machine 2
         uses: appleboy/ssh-action@master
         with:
           host: machine2
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: pip install mitmproxy & nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy2.py
+          script: nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy2.py
 
   setup-machine-3:
-    needs: setup-tunnel
     runs-on: ubuntu-latest
     steps:
+      - name: Delay for tunnel setup
+        run: sleep 60 # Adjust timing as necessary
+      
       - name: Run mitmdump and proxy3.py on machine 3
         uses: appleboy/ssh-action@master
         with:
           host: machine3
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: pip install mitmproxy & nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy3.py
+          script: nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy3.py
