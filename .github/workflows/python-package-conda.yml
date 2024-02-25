@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   setup-tunnel:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -12,8 +12,7 @@ jobs:
       - name: Setup LambdaTest Tunnel
         run: |
           curl -L https://downloads.lambdatest.com/tunnel/v3/linux/64bit -o LT
-          chmod +x LT
-          nohup ./LT --user shubhamr--key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm & sleep 60
+          ./LT --user shubhamr--key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm & sleep 60
         env:
           LT_USER: ${{ secrets.LT_USER }}
           LT_KEY: ${{ secrets.LT_KEY }}
