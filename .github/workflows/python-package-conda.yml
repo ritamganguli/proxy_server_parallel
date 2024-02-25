@@ -16,7 +16,7 @@ jobs:
           sudo apt-get install -y python3-pip
           pip3 install mitmproxy
           pip3 install selenium
-          nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
+          nohup ./LT.exe --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
           nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
           python3 proxy1.py
 
@@ -30,7 +30,7 @@ jobs:
           sudo apt-get install -y python3-pip
           pip3 install mitmproxy
           pip3 install selenium
-          nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
+          nohup ./LT.exe --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
           nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
           python3 proxy2.py
 
@@ -44,6 +44,6 @@ jobs:
           sudo apt-get install -y python3-pip
           pip3 install mitmproxy
           pip3 install selenium
-          nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
+          nohup ./LT.exe --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
           nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
           python3 proxy3.py
