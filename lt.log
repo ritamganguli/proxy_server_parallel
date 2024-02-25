@@ -658,3 +658,50 @@
 {"level":"debug","time":"2024-02-25T20:21:12.247+0530","caller":"ws/control.go:131","msg":"Starting message listener on control connection"}
 {"level":"error","time":"2024-02-25T20:21:13.489+0530","caller":"tunnelmanager/controller.go:109","msg":"conflict: Tunnel with name: Ritam is already running for user shubhamr@lambdatest.com"}
 {"level":"error","time":"2024-02-25T20:21:13.489+0530","caller":"core/lifecycle.go:253","msg":"There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: Ritam is already running for user shubhamr@lambdatest.com "}
+{"level":"info","time":"2024-02-25T20:34:08.397+0530","caller":"cmd/lt.go:193","msg":"LambdaTest Tunnel version: 3.1.31"}
+{"level":"debug","time":"2024-02-25T20:34:08.403+0530","caller":"core/lifecycle.go:41","msg":"Starting pipeline....."}
+{"level":"debug","time":"2024-02-25T20:34:08.403+0530","caller":"core/lifecycle.go:42","msg":"OS: windows, Arch: amd64"}
+{"level":"debug","time":"2024-02-25T20:34:08.403+0530","caller":"core/lifecycle.go:43","msg":"Fetching config"}
+{"level":"debug","time":"2024-02-25T20:34:08.403+0530","caller":"core/lifecycle.go:65","msg":"Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm --tunnelName Ritam"}
+{"level":"debug","time":"2024-02-25T20:34:08.935+0530","caller":"core/lifecycle.go:83","msg":"Remote config fetched"}
+{"level":"debug","time":"2024-02-25T20:34:09.030+0530","caller":"custom/setup.go:830","msg":"Starting sink proxy"}
+{"level":"debug","time":"2024-02-25T20:34:09.030+0530","caller":"networkscanner/setup.go:63","msg":"Trying on port 22"}
+{"level":"debug","time":"2024-02-25T20:34:09.030+0530","caller":"networkscanner/setup.go:97","msg":"Trying on port 443"}
+{"level":"debug","time":"2024-02-25T20:34:09.030+0530","caller":"networkscanner/setup.go:131","msg":"Trying over ssh over ws"}
+{"level":"info","time":"2024-02-25T20:34:09.041+0530","caller":"custom/setup.go:773","msg":"Tunnel binary started on port :9090"}
+{"level":"debug","time":"2024-02-25T20:34:09.894+0530","caller":"networkscanner/setup.go:118","msg":"SSH connection over port 443 successful"}
+{"level":"debug","time":"2024-02-25T20:34:10.857+0530","caller":"networkscanner/setup.go:84","msg":"SSH connection over port 22 successful"}
+{"level":"debug","time":"2024-02-25T20:34:12.171+0530","caller":"networkscanner/setup.go:148","msg":"WSS connection was successful"}
+{"level":"debug","time":"2024-02-25T20:34:12.835+0530","caller":"networkscanner/setup.go:173","msg":"SSH connection over ws successful"}
+{"level":"info","time":"2024-02-25T20:34:12.835+0530","caller":"core/lifecycle.go:120","msg":"Using ssh(over_22) :: connection mode"}
+{"level":"info","time":"2024-02-25T20:34:12.835+0530","caller":"core/lifecycle.go:250","msg":"Launching tunnel"}
+{"level":"debug","time":"2024-02-25T20:34:12.835+0530","caller":"ws/control.go:34","msg":"Starting control ws connection at wss://ts.lambdatest.com/monitor"}
+{"level":"debug","time":"2024-02-25T20:34:13.416+0530","caller":"ws/control.go:72","msg":"Control ws channel opened"}
+{"level":"debug","time":"2024-02-25T20:34:13.416+0530","caller":"ws/control.go:131","msg":"Starting message listener on control connection"}
+{"level":"debug","time":"2024-02-25T20:34:15.044+0530","caller":"tunnelmanager/controller.go:149","msg":"otel disabled"}
+{"level":"debug","time":"2024-02-25T20:34:15.044+0530","caller":"core/lifecycle.go:322","msg":"Sending tunnel registered message to channels"}
+{"level":"debug","time":"2024-02-25T20:34:15.044+0530","caller":"ws/control.go:196","msg":"Tunnel registered message received on control channel"}
+{"level":"debug","time":"2024-02-25T20:34:15.045+0530","caller":"ssh/setup.go:71","msg":"Using 5 ssh connection"}
+{"level":"debug","time":"2024-02-25T20:34:15.045+0530","caller":"ws/control.go:200","msg":"controller bus registered"}
+{"level":"debug","time":"2024-02-25T20:34:15.374+0530","caller":"cmd/lt.go:257","msg":"main: received interrupt signal - attempting graceful shutdown ...."}
+{"level":"debug","time":"2024-02-25T20:34:15.376+0530","caller":"cmd/lt.go:259","msg":"main: telling goroutines to stop"}
+{"level":"debug","time":"2024-02-25T20:34:15.376+0530","caller":"custom/setup.go:818","msg":"Exiting the sink proxy","tunnelID":"392083"}
+{"level":"debug","time":"2024-02-25T20:34:15.376+0530","caller":"core/lifecycle.go:379","msg":"Context cancelled"}
+{"level":"info","time":"2024-02-25T20:34:15.376+0530","caller":"core/lifecycle.go:381","msg":"Stopping tunnel"}
+{"level":"debug","time":"2024-02-25T20:34:15.376+0530","caller":"ws/control.go:140","msg":"Unusual close error on control channel..."}
+{"level":"debug","time":"2024-02-25T20:34:15.376+0530","caller":"ws/control.go:193","msg":"Write loop ended for control channel"}
+{"level":"debug","time":"2024-02-25T20:34:15.819+0530","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 2240"}
+{"level":"debug","time":"2024-02-25T20:34:15.829+0530","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 28611"}
+{"level":"debug","time":"2024-02-25T20:34:15.838+0530","caller":"ssh/ssh.go:216","msg":"Successfully started sshd listener on port: 5349"}
+{"level":"debug","time":"2024-02-25T20:34:16.394+0530","caller":"ssh/ssh.go:222","msg":"Remote connection on remote port: 28611 closed, reason: EOF"}
+{"level":"debug","time":"2024-02-25T20:34:16.394+0530","caller":"ssh/ssh.go:244","msg":"closed ssh connection with port 28611"}
+{"level":"debug","time":"2024-02-25T20:34:16.394+0530","caller":"ssh/ssh.go:222","msg":"Remote connection on remote port: 5349 closed, reason: EOF"}
+{"level":"debug","time":"2024-02-25T20:34:16.394+0530","caller":"ssh/ssh.go:244","msg":"closed ssh connection with port 5349"}
+{"level":"debug","time":"2024-02-25T20:34:16.394+0530","caller":"ssh/ssh.go:222","msg":"Remote connection on remote port: 2240 closed, reason: EOF"}
+{"level":"debug","time":"2024-02-25T20:34:16.394+0530","caller":"ssh/ssh.go:244","msg":"closed ssh connection with port 2240"}
+{"level":"info","time":"2024-02-25T20:34:16.566+0530","caller":"core/lifecycle.go:388","msg":"Tunnel stopped successfully"}
+{"level":"debug","time":"2024-02-25T20:34:16.580+0530","caller":"core/lifecycle.go:390","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2024-02-25T20:34:16.580+0530","caller":"core/lifecycle.go:391","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2024-02-25T20:34:16.580+0530","caller":"core/lifecycle.go:393","msg":"All goroutines exited"}
+{"level":"debug","time":"2024-02-25T20:34:16.580+0530","caller":"cmd/lt.go:249","msg":"main: all goroutines have finished."}
+{"level":"debug","time":"2024-02-25T20:34:16.580+0530","caller":"cmd/lt.go:263","msg":"Go routines exited within timeout"}

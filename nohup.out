@@ -598,3 +598,51 @@ No configuration file found. Proceeding with defaults
 [35mDEBUG[0m	Starting message listener on control connection
 [31mERROR[0m	conflict: Tunnel with name: Ritam is already running for user shubhamr@lambdatest.com
 [31mERROR[0m	There was an error while starting tunnel: ERR::LUNCH::TUNN : Launch tunnel failed conflict: Tunnel with name: Ritam is already running for user shubhamr@lambdatest.com 
+No configuration file found. Proceeding with defaults
+[34mINFO[0m	LambdaTest Tunnel version: 3.1.31
+[35mDEBUG[0m	Starting pipeline.....
+[35mDEBUG[0m	OS: windows, Arch: amd64
+[35mDEBUG[0m	Fetching config
+[35mDEBUG[0m	Starting tunnel With flags: --user shubhamr --key ***** --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm --tunnelName Ritam
+[35mDEBUG[0m	Remote config fetched
+[35mDEBUG[0m	Starting sink proxy
+[35mDEBUG[0m	Trying on port 22
+[35mDEBUG[0m	Trying on port 443
+[35mDEBUG[0m	Trying over ssh over ws
+[34mINFO[0m	Tunnel binary started on port :9090
+[35mDEBUG[0m	SSH connection over port 443 successful
+[35mDEBUG[0m	SSH connection over port 22 successful
+[35mDEBUG[0m	WSS connection was successful
+[35mDEBUG[0m	SSH connection over ws successful
+[34mINFO[0m	Using ssh(over_22) :: connection mode
+[34mINFO[0m	Launching tunnel
+[35mDEBUG[0m	Starting control ws connection at wss://ts.lambdatest.com/monitor
+[35mDEBUG[0m	Control ws channel opened
+[35mDEBUG[0m	Starting message listener on control connection
+[35mDEBUG[0m	otel disabled
+[35mDEBUG[0m	Sending tunnel registered message to channels
+[35mDEBUG[0m	Tunnel registered message received on control channel
+[35mDEBUG[0m	Using 5 ssh connection
+[35mDEBUG[0m	controller bus registered
+[35mDEBUG[0m	main: received interrupt signal - attempting graceful shutdown ....
+[35mDEBUG[0m	main: telling goroutines to stop
+[35mDEBUG[0m	Exiting the sink proxy	{"tunnelID": "392083"}
+[35mDEBUG[0m	Context cancelled
+[34mINFO[0m	Stopping tunnel
+[35mDEBUG[0m	Unusual close error on control channel...
+[35mDEBUG[0m	Write loop ended for control channel
+[35mDEBUG[0m	Successfully started sshd listener on port: 2240
+[35mDEBUG[0m	Successfully started sshd listener on port: 28611
+[35mDEBUG[0m	Successfully started sshd listener on port: 5349
+[35mDEBUG[0m	Remote connection on remote port: 28611 closed, reason: EOF
+[35mDEBUG[0m	closed ssh connection with port 28611
+[35mDEBUG[0m	Remote connection on remote port: 5349 closed, reason: EOF
+[35mDEBUG[0m	closed ssh connection with port 5349
+[35mDEBUG[0m	Remote connection on remote port: 2240 closed, reason: EOF
+[35mDEBUG[0m	closed ssh connection with port 2240
+[34mINFO[0m	Tunnel stopped successfully
+[35mDEBUG[0m	Quit requested from main goroutine....
+[35mDEBUG[0m	Waiting for the goroutines to exit
+[35mDEBUG[0m	All goroutines exited
+[35mDEBUG[0m	main: all goroutines have finished.
+[35mDEBUG[0m	Go routines exited within timeout
