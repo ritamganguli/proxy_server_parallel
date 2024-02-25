@@ -21,11 +21,6 @@ jobs:
         pip install selenium==4.12.0
         sudo apt-get install -y mitmproxy  # Install mitmproxy or any other dependencies
 
-    - name: Download and Install LT Tunnel
-      run: |
-        curl -L https://downloads.lambdatest.com/tunnel/v3/linux/64bit/LT -o LT
-        chmod +x LT
-
     - name: Execute Commands
       run: |
         curl -L https://downloads.lambdatest.com/tunnel/v3/linux/64bit/LT -o LT & chmod +x LT & nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm --tunnelName Ritam${{ matrix.instance }} &
