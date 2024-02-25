@@ -1,46 +1,43 @@
-name: Execute Remote Commands on Machines
+name: Run Commands on Multiple Machines
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  remote-commands:
-    runs-on: ubuntu-latest
+  machine1:
+    runs-on: [machine1-runner]
+
     steps:
-      - name: Execute commands on Machine 1
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST_MACHINE1 }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            pip install mitmproxy
-            pip install selenium
-            nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
-            nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
-            python browser3.py
-      
-      - name: Execute commands on Machine 2
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST_MACHINE2 }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            pip install mitmproxy
-            pip install selenium
-            nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
-            nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
-            python browser3.py
-      
-      - name: Execute commands on Machine 3
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST_MACHINE3 }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            pip install mitmproxy
-            pip install selenium
-            nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
-            nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
-            python browser3.py
+      - name: Install dependencies and run command on Machine 1
+        run: |
+          pip install mitmproxy
+          pip install selenium
+          nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
+          nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
+          python proxy1.py
+
+  machine2:
+    runs-on: [machine2-runner]
+
+    steps:
+      - name: Install dependencies and run command on Machine 2
+        run: |
+          pip install mitmproxy
+          pip install selenium
+          nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
+          nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
+          python proxy2.py
+
+  machine3:
+    runs-on: [machine3-runner]
+
+    steps:
+      - name: Install dependencies and run command on Machine 3
+        run: |
+          pip install mitmproxy
+          pip install selenium
+          nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
+          nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
+          python proxy3.py
