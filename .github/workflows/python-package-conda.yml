@@ -1,26 +1,29 @@
-name: Background Commands Pipeline
+name: Parallel Execution with Specific Scripts
 
 on:
   push:
     branches:
-      - main  # Adjust as needed
+      - main  # Adjust this to match the branches you want to trigger the workflow
 
 jobs:
-  background_commands:
-    runs-on: ubuntu-latest
+  run-in-parallel:
+    runs-on: ubuntu-latest  # Assuming you are using Ubuntu runners
+    strategy:
+      matrix:
+        instance: [1, 2, 3]  # Define a matrix to run 3 instances
     steps:
-      - name: Set up Git repository
-        uses: actions/checkout@v2
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
-      - name: Run LT command in background with delay
-        run: |
-          pip install selenium==4.12.0 & ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm > lt.log 2>&1 &
-          sleep 60
+    - name: Setup Environment
+      run: |
+        sudo apt-get update
+        pip install selenium==4.12.0
+        sudo apt-get install -y mitmproxy  # Install mitmproxy or any other dependencies
 
-      - name: Run mitmdump command in background
-        run: |
-          pip install selenium==4.12.0 & nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy1.py
-
-      - name: Run python browser3.py in background
-        run: |
-          pip install selenium==4.12.0 & nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy2.py
+    - name: Execute Commands
+      run: |
+        nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm --tunnelName Ritam${{ matrix.instance }} &
+        sleep 5  # Allow some time for the LT command to initialize
+        nohup mitmdump -s proxy.py > mitmdump${{ matrix.instance }}.log 2>&1 &
+        python proxy${{ matrix.instance }}.py
