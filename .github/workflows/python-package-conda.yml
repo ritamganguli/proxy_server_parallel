@@ -1,4 +1,4 @@
-name: Run Commands on Linux Machines
+name: Run Commands on Windows Machines
 
 on:
   push:
@@ -7,43 +7,55 @@ on:
 
 jobs:
   machine1:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
+      - name: Set up Python and WSL
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
       - name: Install dependencies and run command on Machine 1
         run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip
-          pip3 install mitmproxy
-          pip3 install selenium
-          nohup ./LT.exe --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
-          nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
-          python3 proxy1.py
+          wsl sudo apt-get update
+          wsl sudo apt-get install -y python3-pip
+          wsl pip3 install mitmproxy
+          wsl pip3 install selenium
+          wsl nohup ./LT.exe --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
+          wsl nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
+          wsl python3 proxy1.py
 
   machine2:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
+      - name: Set up Python and WSL
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
       - name: Install dependencies and run command on Machine 2
         run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip
-          pip3 install mitmproxy
-          pip3 install selenium
-          nohup ./LT.exe --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
-          nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
-          python3 proxy2.py
+          wsl sudo apt-get update
+          wsl sudo apt-get install -y python3-pip
+          wsl pip3 install mitmproxy
+          wsl pip3 install selenium
+          wsl nohup ./LT.exe --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
+          wsl nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
+          wsl python3 proxy2.py
 
   machine3:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
+      - name: Set up Python and WSL
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
       - name: Install dependencies and run command on Machine 3
         run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip
-          pip3 install mitmproxy
-          pip3 install selenium
-          nohup ./LT.exe --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
-          nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
-          python3 proxy3.py
+          wsl sudo apt-get update
+          wsl sudo apt-get install -y python3-pip
+          wsl pip3 install mitmproxy
+          wsl pip3 install selenium
+          wsl nohup ./LT.exe --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
+          wsl nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
+          wsl python3 proxy3.py
