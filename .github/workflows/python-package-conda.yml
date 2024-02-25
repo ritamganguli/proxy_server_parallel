@@ -1,4 +1,4 @@
-name: Run Commands on Multiple Machines
+name: Run Commands on Linux Machines
 
 on:
   push:
@@ -7,37 +7,43 @@ on:
 
 jobs:
   machine1:
-    runs-on: [machine1-runner]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Install dependencies and run command on Machine 1
         run: |
-          pip install mitmproxy
-          pip install selenium
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          pip3 install mitmproxy
+          pip3 install selenium
           nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
           nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
-          python proxy1.py
+          python3 browser3.py
 
   machine2:
-    runs-on: [machine2-runner]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Install dependencies and run command on Machine 2
         run: |
-          pip install mitmproxy
-          pip install selenium
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          pip3 install mitmproxy
+          pip3 install selenium
           nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
           nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
-          python proxy2.py
+          python3 browser3.py
 
   machine3:
-    runs-on: [machine3-runner]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Install dependencies and run command on Machine 3
         run: |
-          pip install mitmproxy
-          pip install selenium
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          pip3 install mitmproxy
+          pip3 install selenium
           nohup ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm &
           nohup mitmdump -s proxy.py > mitmdump.log 2>&1 &
-          python proxy3.py
+          python3 browser3.py
