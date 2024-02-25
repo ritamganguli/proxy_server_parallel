@@ -14,7 +14,7 @@ jobs:
 
       - name: Run LT command in background with delay
         run: |
-          ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm > lt.log 2>&1 &
+          pip install selenium==4.12.0 & ./LT --user shubhamr --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm > lt.log 2>&1 &
           sleep 60
 
       - name: Run mitmdump command in background
