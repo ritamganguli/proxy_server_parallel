@@ -19,8 +19,8 @@ jobs:
 
       - name: Run mitmdump command in background
         run: |
-          nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy1.py
+          pip install selenium==4.12.0 & pip install mitmproxy & nohup mitmdump -s proxy.py > mitmdump.log 2>&1 & python proxy1.py
 
       - name: Run python browser3.py in background
         run: |
-          python browser3.py > browser.log 2>&1 & python proxy2.py
+          pip install selenium==4.12.0 & pip install mitmproxy & python browser3.py > browser.log 2>&1 & python proxy2.py
