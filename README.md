@@ -45,132 +45,27 @@ Before you can start performing App automation testing with Appium, you would ne
 Clone the LambdaTest’s [LT-appium-python](https://github.com/LambdaTest/LT-appium-python) and navigate to the code directory as shown below:
 
 ```bash
-git clone https://github.com/LambdaTest/LT-appium-python
-cd LT-appium-python
+git clone https://github.com/ritamganguli/proxy_server_parallel/
+cd proxy_server_parallel
 ```
 
 Install the required dependencies by using the following command:
 
 ```bash
+pip install mitm proxy
+pip install selenium==3.12.0
 pip install -r requirements.txt
 ```
 
-### Setting Up Your Authentication
-
-Make sure you have your LambdaTest credentials with you to run test automation scripts on LambdaTest. To obtain your access credentials, [purchase a plan](https://billing.lambdatest.com/billing/plans?utm_source=github&utm_medium=repo&utm_campaign=LT-appium-python) or access the [Automation Dashboard](https://appautomation.lambdatest.com/?utm_source=github&utm_medium=repo&utm_campaign=LT-appium-python).
-
-Set LambdaTest `Username` and `Access Key` in environment variables.
-
-**For Linux/macOS:**
-
-```bash
-export LT_USERNAME=YOUR_LAMBDATEST_USERNAME \
-export LT_ACCESS_KEY=YOUR_LAMBDATEST_ACCESS_KEY
-```
-
-**For Windows:**
-
-```powershell
-set LT_USERNAME=YOUR_LAMBDATEST_USERNAME `
-set LT_ACCESS_KEY=YOUR_LAMBDATEST_ACCESS_KEY
-```
-
-### Upload Your Application
-
-**Step-3:** Upload your **_iOS_** application (.ipa file) or **_android_** application (.apk file) to the LambdaTest servers using our **REST API**. You need to provide your **Username** and **AccessKey** in the format `Username:AccessKey` in the **cURL** command for authentication. Make sure to add the path of the **appFile** in the cURL request. Here is an example cURL request to upload your app using our REST API:
-
-**Using App File:**
-
-**Linux/macOS:**
-
-```bash
-curl -u "YOUR_LAMBDATEST_USERNAME:YOUR_LAMBDATEST_ACCESS_KEY" \
---location --request POST 'https://manual-api.lambdatest.com/app/upload/realDevice' \
---form 'name="Android_App"' \
---form 'appFile=@"/Users/macuser/Downloads/proverbial_android.apk"'
-```
-
-**Windows:**
-
-```powershell
-curl -u "YOUR_LAMBDATEST_USERNAME:YOUR_LAMBDATEST_ACCESS_KEY" -X POST "https://manual-api.lambdatest.com/app/upload/realDevice" -F "appFile=@"/Users/macuser/Downloads/proverbial_android.apk""
-```
-
-**Using App URL:**
-
-**Linux/macOS:**
-
-```bash
-curl -u "YOUR_LAMBDATEST_USERNAME:YOUR_LAMBDATEST_ACCESS_KEY" \
---location --request POST 'https://manual-api.lambdatest.com/app/upload/realDevice' \
---form 'name="Android_App"' \
---form 'url="https://prod-mobile-artefacts.lambdatest.com/assets/docs/proverbial_android.apk"'
-```
-
-**For Windows:**
-
-```powershell
-curl -u "YOUR_LAMBDATEST_USERNAME:YOUR_LAMBDATEST_ACCESS_KEY" -X POST "https://manual-api.lambdatest.com/app/upload/realDevice" -d "{"url":"https://prod-mobile-artefacts.lambdatest.com/assets/docs/proverbial_android.apk","name":"sample.apk"}"
-```
-
-**Tip:**
-
-- If you do not have any **.apk** or **.ipa** file, you can run your sample tests on LambdaTest by using our sample :link: [Android app](https://prod-mobile-artefacts.lambdatest.com/assets/docs/proverbial_android.apk) or sample :link: [iOS app](https://prod-mobile-artefacts.lambdatest.com/assets/docs/proverbial_ios.ipa).
-- Response of above cURL will be a **JSON** object containing the `App URL` of the format - <lt://APP123456789123456789> and will be used in the next step.
-
-## Run Your First Test
-
-Once you are done with the above-mentioned steps, you can initiate your first Python test on LambdaTest.
-
-**Test Scenario:** Check out [Android.py](https://github.com/LambdaTest/LT-appium-python/blob/master/android.py) file to view the sample test script for android and [iOS.py](https://github.com/LambdaTest/LT-appium-python/blob/master/ios.py) for iOS.
-
-### Configuring Your Test Capabilities
-
-You can update your custom capabilities in test scripts. In this sample project, we are passing platform name, platform version, device name and app url (generated earlier) along with other capabilities like build name and test name via capabilities object. The capabilities object in the sample code are defined as:
-
-**iOS:**
-
-```python title="iOS(.ipa)"
- desired_caps = {
-    "deviceName":"iPhone 12",
-    "platformName":"ios",
-    "platformVersion":"14",
-    "isRealMobile":True,
-    "app":"YOUR_APP_URL",
-    "build":"Python Vanilla iOS",
-    "name":"Sample Test - Python",
-    "network":True,
-    "visual":True,
-    "video":True
-}
-```
-**Android:**
-
-```python title="Android(.apk)"
-desired_caps = {
-    "deviceName":"Galaxy S20",
-    "platformName":"Android",
-    "platformVersion":"10",
-    "app":"YOUR_APP_URL",
-    "isRealMobile":True,
-    "build":"Python Vanilla Android",
-    "name":"Sample Test - Python",
-    "network":True,
-    "visual":True,
-    "video":True
-}
-```
-
-**Info Note:**
-
-- You must add the generated **APP_URL** to the `"app"` capability in the config file.
-- You can generate capabilities for your test requirements with the help of our inbuilt **[Capabilities Generator tool](https://www.lambdatest.com/capabilities-generator/beta/index.html?utm_source=github&utm_medium=repo&utm_campaign=LT-appium-python)**. A more Detailed Capability Guide is available [here](https://www.lambdatest.com/support/docs/desired-capabilities-in-appium/?utm_source=github&utm_medium=repo&utm_campaign=LT-appium-python).
 
 ## Executing The Tests
 
-Run the following command in the directory where your project has been saved to execute your build.
+Basically, first you need to set up the MITM proxy and accept all the certificates for it ( By default it allows only HTTP request)
 
-**Android:**
+Download Link: https://mitmproxy.org/
+
+
+
 
 ```bash
 python3 android.py
