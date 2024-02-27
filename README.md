@@ -58,7 +58,7 @@ pip install -r requirements.txt
 ```
 
 
-## Executing The Tests
+## For Mocking UP API Response
 
 1) Basically, first you need to set up the MITM proxy and accept all the certificates for it ( By default it allows only HTTP request)
 
@@ -117,6 +117,75 @@ def request(flow: http.HTTPFlow) -> None:
 For eg how we call the name
 
 <img width="959" alt="image" src="https://github.com/ritamganguli/proxy_server_parallel/assets/35348707/d4acc229-f219-4e42-bc51-336e68084aa8">
+
+
+
+
+## For Fetching Up API Response
+
+1) Basically, first you need to set up the MITM proxy and accept all the certificates for it ( By default it allows only HTTP request)
+
+Download Link: https://mitmproxy.org/ 
+
+2) Mitm Proxy runs on port 8080 so please make sure that you stop all the activities like Jenkins which are running on port 8080
+
+  ```bash
+  .\jenkins.exe stop
+  ```
+  
+  And to start back the Jenkins once testing is done
+  
+  ```bash
+  .\jenkins.exe start
+  ```
+3) Start the proxy server script that you made in order to mock up the api's
+
+    ```bash
+    mitmproxy -s response.py
+    ```
+4) Start up the tunnel and pass up the proxy host and the proxy port over there
+    ```bash
+      ./LT --user {acoount_id} --key {acees_key} --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+      ```
+
+5) Start testing your testcase over lambdatest
+   ```bash
+      python proxy2.py
+      ```
+
+Code Logic
+```from mitmproxy import http
+import json
+
+# Initialize a dictionary to hold all responses
+responses = {}
+
+def response(flow: http.HTTPFlow) -> None:
+    # Capture all responses from the demo.playwright.dev domain
+    if "demo.playwright.dev/api-mocking" in flow.request.pretty_url:     #-------------> API which you want to get response for
+        # Access the response body
+        body = flow.response.content
+        
+        # Use the request URL as the key and the response body as the value
+        responses[flow.request.pretty_url] = json.loads(body)
+        
+        # Save the updated responses dictionary to a file
+        save_responses()
+
+def save_responses():
+    try:
+        with open('api_responses.json', 'w') as file:             #-------------> File name where you want to save the response
+            json.dump(responses, file, indent=4)
+    except Exception as e:
+        print(f"Error saving the responses: {e}")
+
+```
+
+
+
+
+
+
 
 
 
