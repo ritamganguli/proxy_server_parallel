@@ -1,4 +1,4 @@
-# Mocking Up The API & Running Them In Parallel ![pw](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+# Mocking Up The API & Running Them In Parallel & Getting Response ![pw](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 
 <p align="center">
 <img height="500" src="https://user-images.githubusercontent.com/95698164/171858189-9de5d3ef-f177-49ac-9de6-6edb3441740b.png">
