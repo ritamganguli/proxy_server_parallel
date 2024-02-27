@@ -60,22 +60,68 @@ pip install -r requirements.txt
 
 ## Executing The Tests
 
-Basically, first you need to set up the MITM proxy and accept all the certificates for it ( By default it allows only HTTP request)
+1) Basically, first you need to set up the MITM proxy and accept all the certificates for it ( By default it allows only HTTP request)
 
-Download Link: https://mitmproxy.org/
+Download Link: https://mitmproxy.org/ 
+
+2) Mitm Proxy runs on port 8080 so please make sure that you stop all the activities like Jenkins which are running on port 8080
+
+  ```bash
+  .\jenkins.exe stop
+  ```
+  
+  And to start back the Jenkins once testing is done
+  
+  ```bash
+  .\jenkins.exe start
+  ```
+3) Start the proxy server script that you made in order to mock up the api's
+
+    ```bash
+    mitmproxy -s proxy.py
+    ```
+4) Start up the tunnel and pass up the proxy host and the proxy port over there
+    ```bash
+      ./LT --user {acoount_id} --key {acees_key} --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+      ```
+
+5) Start testing your testcase over lambdatest
+   ```bash
+      python proxy2.py
+      ```
 
 
+Code Logic
 
+```
+import os
+from mitmproxy import http
+import json
 
-```bash
-python3 android.py
+def request(flow: http.HTTPFlow) -> None:
+    script_name = os.getenv("SCRIPT_NAME", "ritam3")  # Use the passed script name or default
+
+    mock_data_map = {
+        "ritam1": [{"name": "Orange", "id": 1}],
+        "ritam2": [{"name": "Banana", "id": 2}],
+        "ritam3": [{"name": "Mango", "id": 3}],
+    }
+
+    if flow.request.pretty_url == "https://demo.playwright.dev/api-mocking/api/v1/fruits":
+        mock_data = mock_data_map.get(script_name, []) #basically we pass this test name over the script name and the data comes accordingly 
+        mock_response = json.dumps(mock_data).encode("utf-8")
+        flow.response = http.Response.make(200, mock_response, {"Content-Type": "application/json"})
+
 ```
 
-**IOS:**
+For eg how we call the name
 
-```bash
-python3 ios.py
-```
+<img width="959" alt="image" src="https://github.com/ritamganguli/proxy_server_parallel/assets/35348707/d4acc229-f219-4e42-bc51-336e68084aa8">
+
+
+
+
+
 **Info Note:**
 If you are unable to run the automation script with the above mentioned commands try **'python'** command except for **'python3'**.
 
@@ -83,7 +129,6 @@ If you are unable to run the automation script with the above mentioned commands
 
 > If you fail to run the tests, try creating virtual env and installing the dependencies in that environment to run the tests.
 > Creating and activating a virtual environment
-
 ```
 pip3 install virtualenv
 virtualenv venv
