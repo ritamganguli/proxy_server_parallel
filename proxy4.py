@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 from ritam3 import write_script
 
 
-write_script('ritam3', 'ritam.py')
+write_script('ritam3', 'mock_fetch.py')
 
 username = os.getenv("LT_USERNAME")  # Replace the username
 access_key = os.getenv("LT_ACCESS_KEY")  # Replace the access key
