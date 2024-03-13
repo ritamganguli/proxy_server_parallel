@@ -315,7 +315,64 @@ write_script('ritam3', 'mock_fetch.py')
 
 ```
 
+## For Mocking Up Mobile Apps
 
+1) Basically, first you need to set up the MITM proxy and accept all the certificates for it ( By default it allows only HTTP request)
+
+Download Link: https://mitmproxy.org/ 
+
+2) Mitm Proxy runs on port 8080 so please make sure that you stop all the activities like Jenkins which are running on port 8080
+
+  ```bash
+  cd C:\Program Files\Jenkins\
+  .\jenkins.exe stop
+  ```
+  
+  And to start back the Jenkins once testing is done
+  
+  ```bash
+  .\jenkins.exe start
+  ```
+3) Start the proxy server script that you made in order to mock up the api's
+
+    ```bash
+    mitmproxy -s android_proxy.py
+    ```
+4) Start up the tunnel and pass up the proxy host and the proxy port over there
+    ```bash
+      ./LT --user {acoount_id} --key {acees_key} --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+      ```
+
+5) Start testing your testcase over lambdatest
+   ```bash
+      python android.py
+      ```
+
+Code Logic
+
+```
+import json
+from mitmproxy import http
+
+def request(flow: http.HTTPFlow) -> None:
+    # Check if the request URL matches the one we want to redirect from
+    if flow.request.pretty_url == "https://www.lambdatest.com/":
+        # Change the request URL to the new target
+        flow.request.url = "https://www.lambdatest.com/pricing"
+
+def response(flow: http.HTTPFlow) -> None:
+    # Capture the request URL and response content
+    if flow.request.pretty_url == "https://www.lambdatest.com/pricing":
+        captured_data = {
+            "request_url": flow.request.pretty_url,
+            "response_content": flow.response.content.decode('utf-8', 'ignore')  # Decoding to utf-8, ignoring errors
+        }
+
+        # Save to a JSON file
+        with open("traffic_data.json", "w") as file:
+            json.dump([captured_data], file, indent=4)
+
+```
 
 
 
