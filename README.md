@@ -375,6 +375,78 @@ def response(flow: http.HTTPFlow) -> None:
 ```
 
 
+## For Mocking Up Mobile Apps
+
+1) Basically, first you need to set up the MITM proxy and accept all the certificates for it ( By default it allows only HTTP request)
+
+Download Link: https://mitmproxy.org/ 
+
+2) Mitm Proxy runs on port 8080 so please make sure that you stop all the activities like Jenkins which are running on port 8080
+
+  ```bash
+  cd C:\Program Files\Jenkins\
+  .\jenkins.exe stop
+  ```
+  
+  And to start back the Jenkins once testing is done
+  
+  ```bash
+  .\jenkins.exe start
+  ```
+3) Start the proxy server script that you made in order to mock up the api's
+
+    ```bash
+    mitmproxy -s mitmproxy -s capture_response.py
+    ```
+4) Start up the tunnel and pass up the proxy host and the proxy port over there
+    ```bash
+      ./LT --user {acoount_id} --key {acees_key} --proxy-port 8080 -v --shared-tunnel --proxy-host localhost --ingress-only --mitm
+      ```
+
+5) Start testing your testcase over lambdatest
+   ```bash
+      python androidWeb.py
+      ```
+
+Code Logic
+
+```
+from mitmproxy import http
+import json
+
+class ProxyAddon:
+    def request(self, flow: http.HTTPFlow) -> None:
+        # Modify request here if needed
+        pass
+
+    def response(self, flow: http.HTTPFlow) -> None:
+        # Capture and dump the response in JSON format
+        data = {
+            'request': {
+                'url': flow.request.url,
+                'method': flow.request.method,
+                'headers': dict(flow.request.headers),
+                'content': flow.request.text,
+            },
+            'response': {
+                'status_code': flow.response.status_code,
+                'headers': dict(flow.response.headers),
+                'content': flow.response.text,
+            }
+        }
+
+        #Json file name where you want to capture up the response
+        with open('network_capture.json', 'a') as f:
+            json.dump(data, f, indent=2)
+            f.write('\n')
+
+addons = [
+    ProxyAddon()
+]
+
+```
+
+
 
 
 
