@@ -375,7 +375,7 @@ def response(flow: http.HTTPFlow) -> None:
 ```
 
 
-## For Mocking Up Mobile Apps
+## Capturing up live network logs along with headers and request
 
 1) Basically, first you need to set up the MITM proxy and accept all the certificates for it ( By default it allows only HTTP request)
 
