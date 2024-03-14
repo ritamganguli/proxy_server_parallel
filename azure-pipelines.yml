@@ -1,63 +1,24 @@
 trigger:
-- none
+- master
 
 pool:
   vmImage: 'windows-latest'
 
 jobs:
 - job: RunLTCommand1
-  displayName: 'Run LT command in background'
+  displayName: 'Run LT Command 1'
   steps:
-  - task: PowerShell@2
-    displayName: 'Run LT command in background'
+  - task: CmdLine@2
+    displayName: 'Run LT Command 1'
     inputs:
-      targetType: 'inline'
       script: |
-        # Store the current file path in a variable
-        $currentFilePath = $PSScriptRoot
-
-        # Start the first LT command
-        Start-Process -NoNewWindow -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam100" -PassThru
-
-        # Wait for 30 seconds
-        Start-Sleep -Seconds 30
-
-  - task: PowerShell@2
-    displayName: 'Echo current file path'
-    inputs:
-      targetType: 'inline'
-      script: |
-        ls 
-        pip install Appium-Python-Client
-        pip install selenium==4.12.0
-        python proxy1.py
+        LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam1
 
 - job: RunLTCommand2
-  displayName: 'Run LT command in background'
+  displayName: 'Run LT Command 2'
   steps:
-  - task: PowerShell@2
-    displayName: 'Run LT command in background'
+  - task: CmdLine@2
+    displayName: 'Run LT Command 2'
     inputs:
-      targetType: 'inline'
       script: |
-        # Store the current file path in a variable
-        $currentFilePath = $PSScriptRoot
-
-        # Start the first LT command
-        Start-Process -NoNewWindow -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam13456" -PassThru
-
-        # Wait for 30 seconds
-        Start-Sleep -Seconds 30
-
-  - task: PowerShell@2
-    displayName: 'Echo current file path'
-    inputs:
-      targetType: 'inline'
-      script: |
-        ls 
-        pip install Appium-Python-Client
-        pip install selenium==4.12.0
-        python proxy2.py
-
-
-
+        LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam2
