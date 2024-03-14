@@ -39,8 +39,6 @@ jobs:
     inputs:
       targetType: 'inline'
       script: |
-        # Store the current file path in a variable
-        $currentFilePath = $PSScriptRoot
 
         # Start the LT command
         Start-Process -NoNewWindow -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam13456" -PassThru
