@@ -27,4 +27,4 @@ steps:
       ls 
       pip install Appium-Python-Client
       pip install selenium==3.12.0
-      python android.py
+      python proxy1.py
