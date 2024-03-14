@@ -11,5 +11,6 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    chmod +x LT
     ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh
   displayName: 'Run LambdaTest Command'
