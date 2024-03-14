@@ -1,0 +1,31 @@
+trigger:
+  branches:
+    include:
+      - master
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: DownloadPipelineArtifact@2
+  displayName: 'Download LambdaTest Tunnel'
+  inputs:
+    artifact: 'LambdaTestTunnel'
+
+- task: PowerShell@2
+  displayName: 'Run LambdaTest Tunnel'
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Download LambdaTest Tunnel
+      Invoke-WebRequest -Uri 'https://downloads.lambdatest.com/tunnel/v3/windows/64bit/LT_Windows.zip' -OutFile 'LT_Windows.zip'
+      Expand-Archive -Path 'LT_Windows.zip' -DestinationPath 'LT_Windows'
+      
+      # Run LambdaTest Tunnel
+      Start-Process -FilePath 'LT_Windows/LT.exe' -ArgumentList '--user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh' -NoNewWindow -Wait
+
+- task: PowerShell@2
+  displayName: 'Run android.py script'
+  inputs:
+    targetType: 'inline'
+    script: 'python android.py'
