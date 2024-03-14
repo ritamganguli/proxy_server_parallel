@@ -32,6 +32,7 @@ lt_options["smartUI.project"] = "test"
 lt_options["name"] = "basic_unit_selinium"
 lt_options["w3c"] = True
 lt_options["tunnel"]=True
+lt_options["tunnelName"]="Ritam13456"
 lt_options["plugin"] = "python-python"
 options.set_capability("LT:Options", lt_options)
 
