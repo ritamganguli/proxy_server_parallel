@@ -25,4 +25,6 @@ steps:
     targetType: 'inline'
     script: |
       ls 
+      pip install Appium-Python-Client
+      pip install selenium==3.12.0
       python android.py
