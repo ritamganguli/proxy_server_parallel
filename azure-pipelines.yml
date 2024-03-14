@@ -13,7 +13,8 @@ jobs:
     inputs:
       targetType: 'inline'
       script: |
-        ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam1
+        Start-Process -FilePath "./LT" -ArgumentList "--user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam1"
+        Start-Sleep -Seconds 300  # 5 minutes (300 seconds)
 
 - job: RunLTCommand2
   displayName: 'Run LT Command 2'
@@ -23,4 +24,5 @@ jobs:
     inputs:
       targetType: 'inline'
       script: |
-        ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam3
+        Start-Process -FilePath "./LT" -ArgumentList "--user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam3"
+        Start-Sleep -Seconds 300  # 5 minutes (300 seconds)
