@@ -25,4 +25,4 @@ steps:
     targetType: 'inline'
     script: |
       ls 
-      python android1.py
+      python android.py
