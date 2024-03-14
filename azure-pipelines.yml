@@ -10,9 +10,6 @@ steps:
     versionSpec: '14.x'
   displayName: 'Install Node.js'
 
-- script: npm install -g lambdatest-cli
-  displayName: 'Install LambdaTest CLI'
-
 - script: |
     LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh
   displayName: 'Run LambdaTest Command'
