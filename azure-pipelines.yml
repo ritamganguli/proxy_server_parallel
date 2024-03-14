@@ -12,7 +12,7 @@ jobs:
     displayName: 'Run LT Command 1'
     inputs:
       script: |
-        LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam1
+        ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam1
 
 - job: RunLTCommand2
   displayName: 'Run LT Command 2'
@@ -21,4 +21,4 @@ jobs:
     displayName: 'Run LT Command 2'
     inputs:
       script: |
-        LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam2
+        ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam2
