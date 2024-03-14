@@ -17,7 +17,7 @@ jobs:
         $currentFilePath = $PSScriptRoot
 
         # Start the LT command
-        Start-Process -NoNewWindow -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh" -PassThru
+        Start-Process -NoNewWindow -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh  -tunnelName Ritam1" -PassThru
 
         # Wait for 30 seconds
         Start-Sleep -Seconds 30
@@ -44,7 +44,7 @@ jobs:
         $currentFilePath = $PSScriptRoot
 
         # Start the LT command
-        Start-Process -NoNewWindow -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh" -PassThru
+        Start-Process -NoNewWindow -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh  --tunnelName Ritam2" -PassThru
 
         # Wait for 30 seconds
         Start-Sleep -Seconds 30
