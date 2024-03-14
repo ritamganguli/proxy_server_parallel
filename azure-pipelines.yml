@@ -55,4 +55,4 @@ jobs:
         ls 
         pip install Appium-Python-Client
         pip install selenium==4.12.0
-        python proxy1.py
+        python proxy2.py
