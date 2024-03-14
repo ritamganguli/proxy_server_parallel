@@ -1,28 +1,18 @@
 trigger:
-- main
+- master  # Or specify the branch you want to trigger the pipeline
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'  # Choose the appropriate image based on your requirements
 
-jobs:
-- job: RunLTCommand1
-  displayName: 'Run LT Command 1'
-  steps:
-  - task: PowerShell@2
-    displayName: 'Run LT Command 1'
-    inputs:
-      targetType: 'inline'
-      script: |
-        Start-Process -FilePath "./LT" -ArgumentList "--user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam1"
-        Start-Sleep -Seconds 300  # 5 minutes (300 seconds)
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '14.x'
+  displayName: 'Install Node.js'
 
-- job: RunLTCommand2
-  displayName: 'Run LT Command 2'
-  steps:
-  - task: PowerShell@2
-    displayName: 'Run LT Command 2'
-    inputs:
-      targetType: 'inline'
-      script: |
-        Start-Process -FilePath "./LT" -ArgumentList "--user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam3"
-        Start-Sleep -Seconds 300  # 5 minutes (300 seconds)
+- script: npm install -g lambdatest-cli
+  displayName: 'Install LambdaTest CLI'
+
+- script: |
+    LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh
+  displayName: 'Run LambdaTest Command'
