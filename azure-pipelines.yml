@@ -4,15 +4,33 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'  # Choose the appropriate image based on your requirements
 
-steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '14.x'
-  displayName: 'Install Node.js'
+jobs:
+- job: 'RunLambdaTestInParallel1'
+  displayName: 'Run LambdaTest Commands in Parallel'
+  steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '14.x'
+    displayName: 'Install Node.js'
 
-- script: |
-    chmod +x LT
-    ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam100 &
-    pip install selenium==4.12.0
-    python proxy1.py
-  displayName: 'Run LambdaTest Command'
+  - script: |
+      chmod +x LT
+      ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam100 &
+      pip install selenium==4.12.0
+      python proxy1.py
+    displayName: 'Run LambdaTest Command'
+
+- job: 'RunLambdaTestInParallel2'
+  displayName: 'Run LambdaTest Commands in Parallel'
+  steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '14.x'
+    displayName: 'Install Node.js'
+
+  - script: |
+      chmod +x LT
+      ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam13456 &
+      pip install selenium==4.12.0
+      python proxy2.py
+    displayName: 'Run LambdaTest Command'
