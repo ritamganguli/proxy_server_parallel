@@ -33,7 +33,7 @@ jobs:
         python proxy1.py
 
 - job: RunLTCommand2
-  displayName: 'Run LT command in background 1'
+  displayName: 'Run LT command in background'
   steps:
   - task: PowerShell@2
     displayName: 'Run LT command in background'
@@ -43,7 +43,7 @@ jobs:
         # Store the current file path in a variable
         $currentFilePath = $PSScriptRoot
 
-        # Start the LT command
+        # Start the first LT command
         Start-Process -NoNewWindow -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam13456" -PassThru
 
         # Wait for 30 seconds
@@ -57,4 +57,7 @@ jobs:
         ls 
         pip install Appium-Python-Client
         pip install selenium==4.12.0
-        python proxy2.py
+        python proxy1.py
+
+
+
