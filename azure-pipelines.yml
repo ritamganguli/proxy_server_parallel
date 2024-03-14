@@ -8,17 +8,19 @@ jobs:
 - job: RunLTCommand1
   displayName: 'Run LT Command 1'
   steps:
-  - task: CmdLine@2
+  - task: PowerShell@2
     displayName: 'Run LT Command 1'
     inputs:
+      targetType: 'inline'
       script: |
         ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam1
 
 - job: RunLTCommand2
   displayName: 'Run LT Command 2'
   steps:
-  - task: CmdLine@2
+  - task: PowerShell@2
     displayName: 'Run LT Command 2'
     inputs:
+      targetType: 'inline'
       script: |
         ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh --tunnelName Ritam3
