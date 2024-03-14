@@ -24,4 +24,5 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
+      $currentFilePath = $PSScriptRoot
       Write-Host "Current file path: $(currentFilePath)"
