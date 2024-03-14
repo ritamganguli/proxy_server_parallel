@@ -10,7 +10,8 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      Start-Process -NoNewWindow -FilePath "LT" -ArgumentList "--user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh" -Wait
+      Start-Process -NoNewWindow -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh" -PassThru
+      Start-Sleep -Seconds 30
 
 - task: PythonScript@0
   displayName: 'Run python script'
