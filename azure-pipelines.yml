@@ -19,8 +19,9 @@ steps:
       # Wait for 30 seconds
       Start-Sleep -Seconds 30
 
-- task: PythonScript@0
-  displayName: 'Run python script'
+- task: PowerShell@2
+  displayName: 'Echo current file path'
   inputs:
-    scriptSource: 'filePath'
-    scriptPath: '$(currentFilePath)/android.py'
+    targetType: 'inline'
+    script: |
+      Write-Host "Current file path: $(currentFilePath)"
