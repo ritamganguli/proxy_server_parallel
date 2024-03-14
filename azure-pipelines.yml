@@ -16,4 +16,4 @@ steps:
   displayName: 'Run python script'
   inputs:
     scriptSource: 'filePath'
-    scriptPath: 'android.py'
+    scriptPath: 'path/to/your/python_script.py'
