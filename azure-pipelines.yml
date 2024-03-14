@@ -13,5 +13,6 @@ steps:
 - script: |
     chmod +x LT
     ./LT --user shubhamr@lambdatest.com --key dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh &
+    pip install selenium==4.12.0
     python proxy1.py
   displayName: 'Run LambdaTest Command'
